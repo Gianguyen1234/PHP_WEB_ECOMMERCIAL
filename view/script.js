@@ -84,7 +84,7 @@ function toggleChat() {
     var password = document.getElementById('password').value;
 
     if (username.trim() === '' || password.trim() === '') {
-        alert('Quý khách cần điền đầy đủ tên email và mật khẩu!');
+        alert('You need to fill in your full name, email, and password!');
         return false; // Ngăn chặn gửi form nếu thông tin không hợp lệ
     }
     return true; // Cho phép gửi form nếu thông tin hợp lệ
