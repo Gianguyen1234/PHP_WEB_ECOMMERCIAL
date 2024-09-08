@@ -23,7 +23,6 @@ foreach ($billct as $product) {
         ]
     ];
 }
-// Specify the coupon ID
 
 
 // Tạo session thanh toán

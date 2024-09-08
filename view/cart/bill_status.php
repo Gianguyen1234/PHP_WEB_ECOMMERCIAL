@@ -74,18 +74,18 @@
 <div class="main-container">
 <div class="row">
     <div class="row frmtitle">
-        <H1>ĐƠN HÀNG CỦA BẠN</H1>
+        <H1>YOUR ORDER LIST</H1>
     </div>
     <div class="rowkhac frmcontent">
         <div class="rowkhac mb10 frmdsloai">
             <table>
                 <tr>
                     
-                    <th>MÃ ĐƠN HÀNG</th>
-                    <th>NGÀY ĐẶT HÀNG</th>
-                    <th>TỔNG SỐ LƯỢNG</th>
-                    <th>TỔNG GIÁ TRỊ ĐƠN HÀNG</th>
-                    <th>TÌNH TRẠNG ĐƠN HÀNG</th>
+                    <th>ID ORDER</th>
+                    <th>ORDER DATE</th>
+                    <th>TOTAL ORDERS</th>
+                    <th>TOTAL BILL</th>
+                    <th>BILL STATUS</th>
                    
                     
                 </tr>
