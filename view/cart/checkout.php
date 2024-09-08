@@ -3,7 +3,7 @@
 session_start();
 require __DIR__ . "/vendor/autoload.php";
 
-$stripe_secret_key = "sk_test_51Mb3XwK7dDPJ3SY12lid9NH6XpcOcNRTFfIKKuz8HKD47jN8Jf7YGtwNYaREOgaZsRli82SE8Dl2AfTGebH3IGRZ00u4oVbZU3";
+$stripe_secret_key = "YOUR_STRIPE_SECRET_API_KEY";
 
 \Stripe\Stripe::setApiKey($stripe_secret_key);
 
