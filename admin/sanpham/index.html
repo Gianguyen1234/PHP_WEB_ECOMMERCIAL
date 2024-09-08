@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Details</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 0;
+    }
+
+    .detail-container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+    }
+
+    .detail-heading {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 16px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 8px;
+    }
+
+    .detail-info-section {
+        margin-bottom: 16px;
+    }
+
+    .detail-info-section h3 {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 8px;
+    }
+
+    .detail-info-section p {
+        color: #666;
+        margin-top: 0;
+    }
+
+    .detail-additional-info {
+        margin-left: 24px;
+    }
+
+    .detail-btn {
+        padding: 10px 20px;
+        background-color: #1890ff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+    }
+
+    .detail-btn:hover {
+        background-color: #40a9ff;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 600px) {
+        .detail-container {
+            padding: 10px;
+        }
+
+        .detail-heading {
+            font-size: 20px;
+        }
+
+        .detail-info-section h3 {
+            font-size: 16px;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="detail-container">
+    <div class="detail-heading">Product Details</div>
+
+    <div class="detail-info-section">
+        <h3>TÊN SẢN PHẨM</h3>
+        <p id="product-name">Product Name Placeholder</p>
+    </div>
+
+    <div class="detail-info-section">
+        <h3>GIÁ</h3>
+        <p id="product-price">Price Placeholder</p>
+    </div>
+
+    <div class="detail-info-section">
+        <h3>MÔ TẢ</h3>
+        <p id="product-description">Description Placeholder</p>
+    </div>
+
+    <div class="detail-info-section">
+        <h3>Thông tin sản phẩm</h3>
+        <div class="detail-additional-info" id="additional-info">
+            <p>No additional information available</p>
+        </div>
+    </div>
+
+    <button class="detail-btn" type="button">Hiển thị</button>
+</div>
+
+<script>
+    // Example data - Replace with dynamic data from your form or backend
+    const productName = "Product Name Example";
+    const productPrice = "$99.99";
+    const productDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet, libero at viverra tincidunt, enim elit tincidunt eros, at mollis leo elit eget purus.";
+    const productAdditionalInfo = "Additional information about the product.";
+
+    // Update the DOM with product details
+    document.getElementById('product-name').textContent = productName;
+    document.getElementById('product-price').textContent = productPrice;
+    document.getElementById('product-description').textContent = productDescription;
+    document.getElementById('additional-info').innerHTML = `<p>${productAdditionalInfo}</p>`;
+
+    function displayProductInfo() {
+        alert("Button clicked!");
+        // Implement your logic to display product info dynamically here
+    }
+</script>
+</body>
+</html>

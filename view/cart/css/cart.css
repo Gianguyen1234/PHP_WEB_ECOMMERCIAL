@@ -1,0 +1,166 @@
+/* styles.css */
+
+/* body { */
+    /* font-family: Arial, sans-serif; */
+    /* background-color: #f4f4f4; */
+    /* margin: 0; */
+    /* padding: 0; */
+/* } */
+
+.container {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.left-box {
+    width: 48%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.box-header {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.box-header h2 {
+    margin-bottom: 10px;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+}
+
+.header-row span {
+    flex: 0.5;
+    text-align: center;
+}
+
+.header-row span:nth-child(2) {
+    flex: 3; /* Adjust width of product name */
+}
+
+.header-row span:nth-child(3) {
+    flex: 2; /* Adjust width of price*/
+}
+.header-row span:nth-child(4) {
+    flex: 3.5; /* Adjust width of remove button */
+}
+.header-row span:nth-child(5) {
+    flex: 2.5; /* Adjust width of remove button */
+}
+
+.header-row span:last-child {
+    flex: 1; /* Adjust width of total */
+}
+.right-box {
+    width: 48%;
+    height: fit-content;
+    margin-left: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.product-details {
+    display: flex;
+    align-items: center;
+}
+.product-details img {
+    width: 80px; /* Adjust image width as needed */
+    height: auto;
+    margin-right: 20px; /* Add spacing between image and other details */
+    border-radius: 4px; /* Add a border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+
+.product-info {
+  flex: 1;
+}
+
+
+.product-info span {
+    margin-right: 100px;
+  
+}
+.product-name {
+    display: inline-block;
+    width: 100px; /* Adjust width as needed */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.delete-btn {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    margin-left: 100px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #ff3333;
+}
+
+
+.right-box .summary {
+    margin-bottom: 20px;
+}
+
+.right-box .summary div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.right-box .summary .subtotal,
+.right-box .summary .shipping,
+.right-box .summary .grand-total {
+    font-weight: bold;
+}
+
+.payment-method select {
+    width: 100%;
+    padding: 10px;
+   background-color: azure;
+    border-radius: 4px;
+    border: 1px solid #0c0b0b;
+}
+
+.payment-method span {
+    margin-right: 10px;
+    font-weight: bold;
+}
+.right-box button{
+    float: inline-end;
+    margin-top: 20px;
+    background-color: #15d167;
+    padding: 10px;
+    color: floralwhite;
+    font-weight: 1f;
+    border-radius: 4px;
+    border: 1px solid #38cff0;
+}
+

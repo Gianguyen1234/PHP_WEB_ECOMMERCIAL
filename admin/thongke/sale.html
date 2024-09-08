@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardilac Dashboard</title>
+    <style>
+        body {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        .cardilac {
+            width: 300px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .cardilac:hover {
+            transform: translateY(-5px);
+        }
+
+        .cardilac.green {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        .cardilac.dark {
+            background-color: #333;
+            color: white;
+        }
+
+        .cardilac.blue {
+            background-color: #2196f3;
+            color: white;
+        }
+
+        .cardilac .chart {
+            padding: 20px;
+        }
+
+        .cardilac .content {
+            padding: 20px;
+        }
+
+        .cardilac .title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .cardilac .subtitle {
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .cardilac .update {
+            font-size: 0.8em;
+            color: rgba(255, 255, 255, 0.5);
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="cardilac green">
+        <div class="chart">
+            <canvas id="salesChart"></canvas>
+        </div>
+        <div class="content">
+            <div class="title">Daily Sales</div>
+            <div class="subtitle">(+15%) increase in today sales.</div>
+            <div class="update">updated 4 min ago</div>
+        </div>
+    </div>
+
+    <div class="cardilac dark">
+        <div class="chart">
+            <canvas id="tasksChart"></canvas>
+        </div>
+        <div class="content">
+            <div class="title">Completed Tasks</div>
+            <div class="subtitle">Last Campaign Performance</div>
+            <div class="update">just updated</div>
+        </div>
+    </div>
+
+    <div class="cardilac blue">
+        <div class="chart">
+            <canvas id="revenueChart"></canvas>
+        </div>
+        <div class="content">
+            <div class="title">Monthly Revenue</div>
+            <div class="subtitle">Steady growth observed</div>
+            <div class="update">updated 10 min ago</div>
+        </div>
+    </div>
+
+    <script>
+        const salesCtx = document.getElementById('salesChart').getContext('2d');
+        const tasksCtx = document.getElementById('tasksChart').getContext('2d');
+        const revenueCtx = document.getElementById('revenueChart').getContext('2d');
+
+        new Chart(salesCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                datasets: [{
+                    label: 'Sales',
+                    data: [200, 300, 400, 350, 500, 450, 600, 550, 650],
+                    backgroundColor: 'rgba(255, 255, 255, 0.5)',
+                    borderColor: 'white',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        },
+                        ticks: {
+                            color: 'white'
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            color: 'white'
+                        }
+                    }
+                }
+            }
+        });
+
+        new Chart(tasksCtx, {
+            type: 'line',
+            data: {
+                labels: ['Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                datasets: [{
+                    label: 'Tasks',
+                    data: [50, 60, 70, 60, 90, 80, 110, 100, 130],
+                    borderColor: 'white',
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    borderWidth: 2,
+                    pointBackgroundColor: 'white'
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        },
+                        ticks: {
+                            color: 'white'
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            color: 'white'
+                        }
+                    }
+                }
+            }
+        });
+
+        new Chart(revenueCtx, {
+            type: 'line',
+            data: {
+                labels: ['Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                datasets: [{
+                    label: 'Revenue',
+                    data: [1000, 1500, 1200, 1700, 1600, 1800, 1900, 2000, 2200],
+                    borderColor: 'white',
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    borderWidth: 2,
+                    pointBackgroundColor: 'white'
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        },
+                        ticks: {
+                            color: 'white'
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            color: 'white'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
