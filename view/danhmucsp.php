@@ -22,6 +22,7 @@
     </div>
     <div class="main-content">
         <div class="product-container margin-top">
+            <!-- Hien danh muc san pham -->
             <div class="border-under">
                 <h1><i class="fas fa-font-awesome"></i> Product <?= $tendm ?></h1>
             </div>
