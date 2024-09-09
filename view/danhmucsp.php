@@ -48,6 +48,7 @@
                 ?>
 
             </div>
+            <!-- Phan trang -->
             <div class="boxpage">
                 <div class="pagination " id="pagination">
                     <?php  
@@ -68,6 +69,7 @@
                     ?>
                 </div>
             </div>
+            <!-- end phan trang -->
         </div>
     </div>
 </div>
