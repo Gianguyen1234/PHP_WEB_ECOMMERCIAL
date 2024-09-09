@@ -71,7 +71,8 @@
         </div>
     </div>
 </div>
-<!-- chat -->
+
+<!-- chat bot  -->
 <div class="chat-icon" onclick="toggleChat()">
     <i class="fas fa-comments"></i>
     <div class="tooltip">Chat</div>
@@ -93,7 +94,6 @@
         <button onclick="showAnswer('thanhtoan')">Có hỗ trợ trả góp không?</button>
         <br>
         <button onclick="showAnswer('discount')">Làm thế nào để sử dụng mã giảm giá?</button>
-
     </div>
     <div class="chat-input">
         <input type="text" placeholder="Type your message...">
