@@ -162,16 +162,15 @@
         /* Tạo hiệu ứng chuyển đổi cho viền và màu nền */
 
 
-
     }
 
     .linkdonhang a input:focus {
         outline: none;
-        /* Loại bỏ đường viền xung quanh input khi tập trung */
+        /* Loại bỏ đường viền xung quanh  */
         border-color: #007bff;
-        /* Đổi màu viền khi input được tập trung */
+        /* Đổi màu viền  */
         background-color: #fff;
-        /* Đổi màu nền khi input được tập trung */
+        /* Đổi màu nền */
         animation: blink 1s infinite;
     }
 
@@ -229,8 +228,6 @@
         <?php
         }
         ?>
-
-        <!-- Add more product entries as needed -->
     </div>
     <?php
     if (isset($bill) && (is_array($bill))) {

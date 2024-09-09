@@ -215,47 +215,49 @@
             transform: scale(1);
         }
     }
+
     .payment-method {
-    margin-top: 20px;
-}
+        margin-top: 20px;
+    }
 
-.payment-options {
-    display: flex;
-    gap: 20px;
-    margin-top: 10px;
-}
+    .payment-options {
+        display: flex;
+        gap: 20px;
+        margin-top: 10px;
+    }
 
-.payment-option {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    border: 2px solid transparent;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: border-color 0.3s ease, background-color 0.3s ease;
-}
+    .payment-option {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: border-color 0.3s ease, background-color 0.3s ease;
+    }
 
-.payment-option img {
-    width: 100px;
-    height: auto;
-    margin-bottom: 8px;
-}
+    .payment-option img {
+        width: 100px;
+        height: auto;
+        margin-bottom: 8px;
+    }
 
-.payment-option span {
-    font-weight: bold;
-    color: #333;
-}
+    .payment-option span {
+        font-weight: bold;
+        color: #333;
+    }
 
-.payment-option.selected {
-    border-color: #15d167;
-    background-color: #f0f0f0; /* Highlighted background for the selected option */
-}
+    .payment-option.selected {
+        border-color: #15d167;
+        background-color: #f0f0f0;
+        /* Highlighted background for the selected option */
+    }
 
-.payment-option:hover {
-    border-color: #15d167; /* Highlight on hover */
-}
-
+    .payment-option:hover {
+        border-color: #15d167;
+        /* Highlight on hover */
+    }
 
     .size {
         display: inline-block;
