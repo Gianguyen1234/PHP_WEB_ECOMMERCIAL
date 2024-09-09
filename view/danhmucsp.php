@@ -6,7 +6,8 @@
     </a>
 </div>
 <!--border under -->
-<!-- Add your content here -->
+
+<!-- test total pages -->
 <div class="sidebar-container">
     <button class="expand-btn" onclick="toggleSidebar()"><i class="fas fa-history"></i></button>
     <div class="sidebar">
@@ -16,10 +17,11 @@
                 <li><?=$totalPages?></li>
                 <li>Clothes 2</li>
                 <li>Clothes 3</li>
-                <!-- Add more items here -->
+              
             </ul>
         </div>
     </div>
+    <!-- end sidebar -->
     <div class="main-content">
         <div class="product-container margin-top">
             <!-- Hien danh muc san pham -->
