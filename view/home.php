@@ -1,12 +1,13 @@
-    <!-- cart container -->
+    <!-- cart container contains number of item in cart -->
     <div class="cart-icon">
         <a href="index.php?act=viewcart">
             <i style="color: white;" class="fas fa-shopping-cart"></i>
             <span><?= $num_items_in_cart ?></span>
         </a>
     </div>
-    <!--border under -->
-    <!-- Add your content here -->
+    <!-- end item in cart -->
+
+    <!--Side bar contains history -->
     <div class="sidebar-container">
         <button class="expand-btn" onclick="toggleSidebar()"><i class="fas fa-history"></i></button>
         <div class="sidebar">
@@ -23,7 +24,7 @@
                 ?>
                         <ul>
                             <li><a href="<?= $linkct ?>" class="history"><?= $product_name ?></a></li>
-                            <!-- Add more items here -->
+                         
                         </ul>
                     <?php
                     }
@@ -34,7 +35,7 @@
             </div>
         </div>
         <div class="main-content">
-            <!-- slide show -->
+        <!-- slide show -->
             <!-- Slideshow container -->
             <div class="slideshow-container">
 
@@ -69,7 +70,11 @@
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
-            <!-- end slideshow -->
+            <!-- The end of dots/circles -->
+
+        <!-- end slideshow -->
+
+            <!-- Mở đầu cho New Release -->
             <div class="product-container margin-top">
                 <div class="border-under">
                     <h1><i class="fas fa-font-awesome"></i> New Release</h1>

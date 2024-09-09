@@ -2,11 +2,12 @@ function toggleSidebar() {
     const sidebar = document.querySelector('.sidebar');
     sidebar.classList.toggle('active');
 }
+// toggle mở chat bot
 function toggleChat() {
     var chatContainer = document.querySelector('.chat-container');
     chatContainer.style.display = chatContainer.style.display === 'none' ? 'block' : 'none';
   }
-  
+// gửi tin nhắn 
   function sendMessage() {
     var inputField = document.querySelector('.chat-input input');
     var message = inputField.value;
@@ -16,6 +17,7 @@ function toggleChat() {
       var messageElement = document.createElement('div');
       messageElement.classList.add('message');
       messageElement.textContent = message;
+      // gán tin nhắn 
       chatMessages.appendChild(messageElement);
       inputField.value = '';
     }
