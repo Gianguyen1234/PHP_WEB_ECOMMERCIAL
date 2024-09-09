@@ -1,5 +1,4 @@
 <?php
-// Start session (if not already started)
 session_start();
 require __DIR__ . "/vendor/autoload.php";
 
@@ -34,7 +33,7 @@ $checkout_session = \Stripe\Checkout\Session::create([
     "allow_promotion_codes" => true,
     "line_items" => $line_items // Sử dụng mảng line_items đã được tạo từ cơ sở dữ liệu
 ]);
-// Assuming $billct is an array
+// gan gia tri thong tin bill va thong tin nguoi dat hang
 $_SESSION['billct'] = $billct;
 $_SESSION['customer_info'] = $bill;
 // Chuyển hướng người dùng đến trang thanh toán của Stripe
