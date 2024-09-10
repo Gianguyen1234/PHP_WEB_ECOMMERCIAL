@@ -140,7 +140,6 @@
         float: right;
         text-decoration: none;
         padding: 8px;
-
         border: 1px solid #ccc;
         border-radius: 5px;
         background-color: #f9f9f9;
@@ -148,8 +147,6 @@
         font-size: 14px;
         transition: border-color 0.3s, background-color 0.3s;
         /* Tạo hiệu ứng chuyển đổi cho viền và màu nền */
-
-
     }
 
     .linkdonhang a input:focus {
