@@ -244,19 +244,19 @@
             <h2>THÔNG TIN kHÁCH HÀNG</h2>
             <div class="summary">
                 <div class="subtotal">
-                    <span>Người đặt hàng:</span>
+                    <span>CUSTOMER NAME:</span>
                     <span class="subtotal-amount"><?= $bill['bill_name'] ?></span>
                 </div>
                 <div class="shipping">
-                    <span>Địa chỉ:</span>
+                    <span>ADDRESS:</span>
                     <span><?= $bill['bill_address'] ?></span>
                 </div>
                 <div class="grand-total">
-                    <span>Email:</span>
+                    <span>EMAIL:</span>
                     <span class="total-amount"><?= $bill['bill_email'] ?></span>
                 </div>
                 <div class="grand-total">
-                    <span>Điện thoại:</span>
+                    <span>TELEPHONE:</span>
                     <span class="total-amount"><?= $bill['bill_tel'] ?></span>
                 </div>
             </div>
