@@ -12,7 +12,6 @@
     .cart-container {
         margin-top: 30px;
         display: flex;
-        /* justify-content: space-between; */
         margin-bottom: 50px;
         margin-right: 20px;
         margin-left: 20px;
@@ -86,14 +85,11 @@
 
     .cart-product-details img {
         width: 80px;
-        /* Adjust image width as needed */
         height: auto;
         margin-right: 20px;
-        /* Add spacing between image and other details */
         border-radius: 4px;
-        /* Add a border radius for rounded corners */
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        /* Add a subtle shadow effect */
+
     }
 
     .cart-product-info {
@@ -107,7 +103,6 @@
     .cart-product-name {
         display: inline-block;
         width: 100px;
-        /* Adjust width as needed */
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -116,9 +111,7 @@
     .right-box-container {
         display: flex;
         flex-wrap: wrap;
-        /* Allow boxes to wrap to the next line if necessary */
         gap: 20px;
-        /* Spacing between boxes */
     }
 
 
@@ -145,19 +138,14 @@
 
     .linkdonhang a input {
         float: right;
-        /* Đặt liên kết float bên trái */
         text-decoration: none;
         padding: 8px;
-        /* Khoảng cách giữa nội dung và viền của input */
+
         border: 1px solid #ccc;
-        /* Đặt viền cho input */
         border-radius: 5px;
-        /* Đặt độ cong của viền */
         background-color: #f9f9f9;
         margin-right: 30px;
-        /* Màu nền của input */
         font-size: 14px;
-        /* Cỡ chữ */
         transition: border-color 0.3s, background-color 0.3s;
         /* Tạo hiệu ứng chuyển đổi cho viền và màu nền */
 
