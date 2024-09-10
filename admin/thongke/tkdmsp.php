@@ -28,6 +28,7 @@
         google.charts.setOnLoadCallback(drawComboChart);
 
         function drawComboChart() {
+            // thong ke danh muc san pham
             const data = google.visualization.arrayToDataTable([
                 ['Danh mục', 'Số lượng sản phẩm', 'Giá cao nhất', 'Giá thấp nhất', 'Giá trung bình'],
                 <?php
