@@ -18,7 +18,7 @@
 <div class="sidebar" id="sidebar">
   <div style="text-align: center; margin-bottom: 20px;">
     <img src="img_avatar.png" alt="Profile Image" style="width: 100px; height: 100px; border-radius: 50%;">
-    <h4 style="color: white; margin-top: 10px;">Admin Name</h4>
+    <h4 style="color: white; margin-top: 10px;">Linux Antonio</h4>
   </div>
   <a href="index.php"><i class="fas fa-home"></i> Trang chủ</a>
   <a href="index.php?act=adddm"><i class="fas fa-list"></i> Danh mục</a>
