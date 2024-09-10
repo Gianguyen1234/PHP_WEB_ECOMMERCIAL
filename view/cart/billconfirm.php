@@ -151,11 +151,11 @@
 
     .linkdonhang a input:focus {
         outline: none;
-        /* Loại bỏ đường viền xung quanh  */
+     
         border-color: #007bff;
-        /* Đổi màu viền  */
+       
         background-color: #fff;
-        /* Đổi màu nền */
+       
         animation: blink 1s infinite;
     }
 
