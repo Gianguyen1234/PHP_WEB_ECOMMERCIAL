@@ -22,12 +22,12 @@
         $sql = "update taikhoan set password= '".$password."', reset_token_expires_at=null, reset_token_hash=null where email= '".$email."'";
         pdo_execute($sql);
     }
-     // Step 4: Send a link with access token to the user
+     // Send a link with access token to the user
     function sendPasswordResetLink($email, $token) {
         $reset_link = "http://localhost/client(webbanhang)/index.php?act=updatepassword&token=$token&email=$email";
         $subject = "Password Reset Link";
         $message = "Click the following link to reset your password: $reset_link";
-        $headers = "From: thaianhvan2349@gmail.com"; // Change this to your email address
+        $headers = "From: thaianhvan2349@gmail.com"; 
         // Send email
         if (mail($email, $subject, $message, $headers)) {
         echo "Email sent successfully!";
