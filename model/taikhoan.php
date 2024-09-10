@@ -35,12 +35,12 @@
         echo "Failed to send email.";
         }
     }
-
+    // update tai token de reset password
     function update_token($token_hash,$expiry,$email){
         $sql = "update taikhoan set reset_token_hash= '".$token_hash."', reset_token_expires_at= '".$expiry."' where email= '".$email."'";
         pdo_execute($sql);
     }
-
+    // them tai khoan o phan admin
     function add_taikhoan($tendk, $matkhau,$email,$vaitro){
         $sql="insert into taikhoan(name,password,email,role) values('$tendk','$matkhau','$email','$vaitro')";
         pdo_execute($sql);
