@@ -58,12 +58,5 @@
 
 </div>
 
-<!-- Main Content -->
-<!-- <div class="main-content"> -->
-  <!-- <h2>Main Content Area</h2> -->
-  <!-- <p>This is where your main content will go.</p> -->
-<!-- </div> -->
-<!--  -->
 </body>
-
 </html>
