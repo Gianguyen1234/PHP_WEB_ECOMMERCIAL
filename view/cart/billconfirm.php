@@ -150,12 +150,9 @@
     }
 
     .linkdonhang a input:focus {
-        outline: none;
-     
-        border-color: #007bff;
-       
-        background-color: #fff;
-       
+        outline: none;     
+        border-color: #007bff;      
+        background-color: #fff;       
         animation: blink 1s infinite;
     }
 
@@ -225,15 +222,15 @@
             <h2>THÔNG TIN ĐƠN HÀNG (BILL INFORMATION)</h2>
             <div class="summary">
                 <div class="subtotal">
-                    <span>Mã đơn hàng:</span>
+                    <span>ID BILL:</span>
                     <span class="subtotal-amount">MDH<?= $bill['id'] ?></span>
                 </div>
                 <div class="shipping">
-                    <span>Ngày đặt hàng:</span>
+                    <span>BILL DATE:</span>
                     <span><?= $bill['bill_date'] ?></span>
                 </div>
                 <div class="grand-total">
-                    <span>Phương thức thanh toán:</span>
+                    <span>PAYMENT METHOD:</span>
                     <span class="total-amount"><?= $bill['payment_method'] ?></span>
                 </div>
                 <div class="grand-total">
