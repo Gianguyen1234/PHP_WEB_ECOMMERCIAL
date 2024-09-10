@@ -234,7 +234,7 @@
                     <span class="total-amount"><?= $bill['payment_method'] ?></span>
                 </div>
                 <div class="grand-total">
-                    <span>Grand total:</span>
+                    <span>GRAND TOTAL:</span>
                     <span class="total-amount"><?= $bill['grandtotal'] ?></span>
                 </div>
             </div>
