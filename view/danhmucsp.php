@@ -84,6 +84,7 @@
         <i class="fas fa-comments"></i> Chat Messenger
         <span class="close" onclick="toggleChat()">×</span>
     </div>
+    <!-- chat questions -->
     <div class="chat-messages" id="chatMessages">
         <button onclick="showAnswer('origin')">Sản phẩm có nguồn gốc từ đâu?</button>
         <br>
