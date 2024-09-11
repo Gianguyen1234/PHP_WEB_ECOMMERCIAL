@@ -85,19 +85,19 @@
         <span class="close" onclick="toggleChat()">×</span>
     </div>
     <!-- chat questions -->
-    <div class="chat-messages" id="chatMessages">
-        <button onclick="showAnswer('origin')">Sản phẩm có nguồn gốc từ đâu?</button>
+   <div class="chat-messages" id="chatMessages">
+        <button onclick="showAnswer('origin')">Where are the products sourced from?</button>
         <br>
-        <button onclick="showAnswer('quality')">Sản phẩm ở đây có chất lượng không?</button>
+        <button onclick="showAnswer('quality')">Are the products here of good quality?</button>
         <br>
-        <button onclick="showAnswer('quytrinh')">Quy trình đặt hàng như thế nào?</button>
+        <button onclick="showAnswer('quytrinh')">What is the order process?</button>
         <br>
-        <button onclick="showAnswer('timegiaohang')">Thời gian giao hàng dự kiến là bao lâu?</button>
+        <button onclick="showAnswer('timegiaohang')">What is the estimated delivery time?</button>
         <br>
-        <button onclick="showAnswer('thanhtoan')">Có hỗ trợ trả góp không?</button>
+        <button onclick="showAnswer('thanhtoan')">Is installment payment supported?</button>
         <br>
-        <button onclick="showAnswer('discount')">Làm thế nào để sử dụng mã giảm giá?</button>
-    </div>
+        <button onclick="showAnswer('discount')">How can I use a discount code?</button>
+   </div>
     <div class="chat-input">
         <input type="text" placeholder="Type your message...">
         <button onclick="sendMessage()">Send</button>
