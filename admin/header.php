@@ -49,7 +49,7 @@
     <i class="fa fa-bell"></i>
     <div class="profile">
       <i class='fas fa-user-cog'></i>
-      <div class="admin-name">Admin Name</div>
+      <div class="admin-name">Linux Antonio</div>
     </div>
   </div>
 </div>
