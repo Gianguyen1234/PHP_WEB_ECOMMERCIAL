@@ -19,7 +19,7 @@
     <img src="img_avatar.png" alt="Profile Image" style="width: 100px; height: 100px; border-radius: 50%;">
     <h4 style="color: white; margin-top: 10px;">Linux Antonio</h4>
   </div>
-  <a href="index.php"><i class="fas fa-home"></i> Trang chủ</a>
+  <a href="index.php"><i class="fas fa-home"></i> Home</a>
   <a href="index.php?act=adddm"><i class="fas fa-list"></i> Danh mục</a>
   <a href="index.php?act=addsp"><i class="fas fa-cubes"></i> Hàng hóa</a>
   <a href="index.php?act=dskh"><i class="fas fa-user-alt"></i> Khách hàng</a>
