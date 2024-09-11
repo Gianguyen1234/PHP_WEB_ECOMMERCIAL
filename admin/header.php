@@ -20,23 +20,22 @@
     <h4 style="color: white; margin-top: 10px;">Linux Antonio</h4>
   </div>
   <a href="index.php"><i class="fas fa-home"></i> Home</a>
-  <a href="index.php?act=adddm"><i class="fas fa-list"></i> Danh mục</a>
-  <a href="index.php?act=addsp"><i class="fas fa-cubes"></i> Hàng hóa</a>
-  <a href="index.php?act=dskh"><i class="fas fa-user-alt"></i> Khách hàng</a>
-  <a href="index.php?act=dsbl"><i class="fas fa-comments"></i> Bình luận</a>
+  <a href="index.php?act=adddm"><i class="fas fa-list"></i> Menu</a>
+  <a href="index.php?act=addsp"><i class="fas fa-cubes"></i> Product</a>
+  <a href="index.php?act=dskh"><i class="fas fa-user-alt"></i> Customer</a>
+  <a href="index.php?act=dsbl"><i class="fas fa-comments"></i> Comment</a>
   <div class="dropdown">
     <a href="index.php?act=thongke" class="dropbtn">
         <i class="fas fa-chart-bar"></i>
-        Thống kê
+        Statistics
     </a>
     <div class="dropdown-content">
-        <a href="index.php?act=tkdm">Thống kê theo danh mục</a>
-        <a href="index.php?act=tkdt">Thống kê doanh thu</a>
+        <a href="index.php?act=tkdm">Statistics by Category</a>
+        <a href="index.php?act=tkdt">Revenue Statistics</a>
     </div>
 </div>
-
-  <a href="index.php?act=listbill"><i class="fas fa-shopping-cart"></i> Đơn hàng</a>
-  <a href="index.php?act=transaction"><i class="fa fa-exchange"></i> Thanh toán</a>
+  <a href="index.php?act=listbill"><i class="fas fa-shopping-cart"></i> Orders</a>
+  <a href="index.php?act=transaction"><i class="fa fa-exchange"></i> Payment</a>
 </div>
 <!-- Top Bar -->
 <div class="top-bar">
