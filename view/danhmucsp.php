@@ -16,8 +16,7 @@
             <ul>
                 <li><?=$totalPages?></li>
                 <li>Clothes 2</li>
-                <li>Clothes 3</li>
-              
+                <li>Clothes 3</li>             
             </ul>
         </div>
     </div>
