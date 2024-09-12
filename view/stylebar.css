@@ -1152,14 +1152,14 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #495057; /* Darker text color */
+    color: #495057; 
     font-size: 16px;
-    transition: color 0.3s ease; /* Smooth transition */
+    transition: color 0.3s ease; 
 }
 
 .navigation-box ul li a.active,
 .navigation-box ul li a:hover {
-    color: #007bff; /* Primary color */
+    color: #007bff; 
 }
 
 .navigation-box ul li a i {
@@ -1167,7 +1167,7 @@ body {
     font-size: 18px;
 }
 
-/* Right box styling */
+/* Right box for payment */
 .right-box {
     width: 60%;
     background-color: white;
@@ -1198,7 +1198,7 @@ body {
 .form-edit-profile input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ced4da; /* Subtle border */
+    border: 1px solid #ced4da; 
     border-radius: 5px;
     font-size: 16px;
 }
@@ -1215,7 +1215,7 @@ body {
 }
 
 .form-edit-profile button:hover {
-    background-color: #0056b3; /* Darker hover color */
+    background-color: #0056b3; 
 }
 
 /* form forgot password */
@@ -1306,18 +1306,18 @@ body {
 
 /* notification box */
 .notification-box {
-    background-color: rgb(10, 186, 7); /* Red color as an example */
-    color: #721c24; /* Dark color for text */
-    border: 1px solid #f5c6cb; /* Border color */
-    padding: 15px; /* Padding around the content */
-    border-radius: 5px; /* Rounded corners */
+    background-color: rgb(10, 186, 7); 
+    color: #721c24; 
+    border: 1px solid #f5c6cb;
+    padding: 15px; 
+    border-radius: 5px; 
     margin-top: 100px;
-    margin-bottom: 20px; /* Margin at the bottom to create space */
-    animation: fadeOut 5s forwards; /* Apply fadeOut animation for 3 seconds */
+    margin-bottom: 20px; 
+    animation: fadeOut 5s forwards; 
 }
 @keyframes fadeOut {
-    0% { opacity: 1; } /* Start with full opacity */
-    100% { opacity: 0; } /* Fade out to full transparency */
+    0% { opacity: 1; } 
+    100% { opacity: 0; }
 }
 .notification {
     background-color: #08f482;
@@ -1370,59 +1370,59 @@ body {
     transform: scale(0.9);
 }
 .bot-message {
-    background-color: #4CAF50; /* Màu nền */
-    color: white; /* Màu chữ */
-    border-radius: 20px; /* Độ cong góc */
-    padding: 10px 20px; /* Khoảng cách padding */
-    margin-bottom: 10px; /* Khoảng cách giữa các tin nhắn */
-    max-width: 70%; /* Độ rộng tối đa */
-    word-wrap: break-word; /* Tách từ khi độ dài vượt quá độ rộng */
-    clear: both; /* Xóa các float */
-    float: left; /* Căn lề bên trái */
+    background-color: #4CAF50; 
+    color: white; 
+    border-radius: 20px;
+    padding: 10px 20px; 
+    margin-bottom: 10px; 
+    max-width: 70%; 
+    word-wrap: break-word; 
+    clear: both;
+    float: left; 
     margin-top: 10px;
 }
 .user-message {
     padding: 10px;
     margin-bottom: 5px;
-    text-align: right; /* Căn phải */
+    text-align: right; 
 }
 .message{
     text-align: right;
 }
 
 .chat-messages button {
-    background-color: #4CAF50; /* Màu nền */
+    background-color: #4CAF50; 
     border: none;
-    color: white; /* Màu chữ */
-    padding: 10px 20px; /* Độ lớn của nút */
+    color: white; 
+    padding: 10px 20px; 
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 10px; /* Độ cong góc */
+    border-radius: 10px; 
     transition-duration: 0.4s;
 }
 
 .chat-messages button:hover {
-    background-color: #45a049; /* Màu nền khi di chuột qua */
+    background-color: #45a049; 
 }
 .bot-info {
     display: flex;
-    flex-direction: column; /* Hiển thị các phần tử con theo chiều dọc */
+    flex-direction: column; 
 }
 
 .avatar-name {
     display: flex;
-    align-items: center; /* Căn chỉnh các phần tử con theo chiều dọc */
+    align-items: center;
 }
 
 .bot-avatar {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin-right: 10px; /* Khoảng cách giữa avatar và tên */
+    margin-right: 10px; 
 }
 
 .bot-name {
@@ -1543,8 +1543,8 @@ body {
 /* new avater updated */
 .parent-container {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center; 
+    align-items: center; 
   
 }
 
@@ -1580,19 +1580,19 @@ body {
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 10px; /* Add gap for spacing between icon and text */
-    white-space: nowrap; /* Prevent text from wrapping */
+    gap: 10px; 
+    white-space: nowrap; 
 }
 
 .update-menu-item i {
-    font-size: 18px; /* Adjust icon size if needed */
+    font-size: 18px; 
 }
 
 .update-menu-item:hover {
     background-color: #f1f1f1;
 }
 
-/* new avater updated */
+
 
 
 
