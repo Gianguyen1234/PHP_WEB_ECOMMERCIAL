@@ -155,8 +155,8 @@ body {
   }
   
   .user-icon a i:hover {
-    color: #003366; /* Darker shade on hover */
-    transform: scale(1.1); /* Slightly increase size on hover */
+    color: #003366; 
+    transform: scale(1.1); 
   }
   
   /* User Name */
@@ -164,12 +164,11 @@ body {
     color: #fff;
     text-decoration: none;
     margin-right: 15px;
-    position: relative; /* Position relative for pseudo-element */
+    position: relative; 
     display: inline-block;
-    transition: color 0.3s ease; /* Smooth color transition */
+    transition: color 0.3s ease; 
   }
   
-  /* Special Hover Effect (No Underline) */
   .user-name a::before {
     content: '';
     position: absolute;
@@ -177,16 +176,16 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #0056b3; /* Match icon color */
-    transition: width 0.3s ease; /* Smooth width transition */
+    background-color: #0056b3; 
+    transition: width 0.3s ease;
   }
   
   .user-name a:hover::before {
-    width: 100%; /* Full width underline on hover */
+    width: 100%; 
   }
   
   .user-name a:hover {
-    color: #0056b3; /* Change text color on hover */
+    color: #0056b3; 
   }
   
 /* danhmuc menu */
@@ -270,7 +269,6 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
-    /* Styles for screens up to 600px */
     .search input[type="text"] {
         font-size: 14px;
     }
@@ -361,8 +359,8 @@ body {
 /* limit in 4 products */
 .product-row {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    gap: 20px; /* Gap between products */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
     /* gap: 20px; */
 }
 .product-card {
@@ -389,7 +387,7 @@ body {
    
 }
 .product-info a {
-    text-decoration: none; /* Xóa dấu gạch dưới cho liên kết */
+    text-decoration: none; 
 }
 .product-info a h3 {
     margin: 0;
@@ -414,16 +412,16 @@ body {
     font-weight: bold;
     color: #00bcd4;
 }
-/* Responsive Styles */
+
 @media screen and (max-width: 768px) {
     .product-row {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
 @media screen and (max-width: 480px) {
     .product-row {
-        grid-template-columns: 1fr; /* 1 column on even smaller screens */
+        grid-template-columns: 1fr;
     }
 }
 .margin-top{
@@ -473,8 +471,8 @@ body {
     cursor: pointer;
 }
 .sidebar-content ul li a {
-    text-decoration: none ; /* Bỏ dấu gạch dưới */
-    color: white ; /* Chuyển màu chữ thành trắng */
+    text-decoration: none ; 
+    color: white ; 
 }
 
 .sidebar-content ul li a:hover {
