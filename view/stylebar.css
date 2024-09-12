@@ -2,17 +2,13 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif,"Roboto";
+    font-family: Arial, sans-serif, "Roboto";
     background-image: url('red_light.jpg');
-/* Replace with your image URL */
-background-size: cover;
-/* Ensure the image covers the whole page */
-background-position: cover;
-/* Center the image */
-background-repeat: no-repeat;
-/* Prevent the image from repeating */
-background-attachment: fixed;
-/* Make the background fixed when scrolling */
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
 .boxcenter{
     width: flex;
@@ -23,7 +19,6 @@ background-attachment: fixed;
 .boxpage{
     width: 60%;
     margin-top: 10px;
-    /* padding-left: 100px; */
 }
 
 .top-bar {
