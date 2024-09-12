@@ -1,7 +1,7 @@
 <div class="signin-container">
     <h2 style="color:#0056b3;">Sign In</h2>
     <?php
-    $thatbai = "Cảnh báo (Warning)!";
+    $thatbai = "Warning!";
     if (isset($thongbao) && $thongbao != "") {
         echo "<div id='notification-error' class='notification-error'>
         $thatbai<br>
