@@ -79,13 +79,13 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 menu.style.opacity = '1';
                 menu.style.transform = 'translateY(0)';
-            }, 10); // Small timeout to ensure the display change is processed
+            }, 10); 
         } else {
             menu.style.opacity = '0';
             menu.style.transform = 'translateY(-10px)';
             setTimeout(() => {
                 menu.style.display = 'none';
-            }, 300); // Match this to the CSS transition duration
+            }, 300);
         }
     });
 
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
             menu.style.transform = 'translateY(-10px)';
             setTimeout(() => {
                 menu.style.display = 'none';
-            }, 300); // Match this to the CSS transition duration
+            }, 300); 
         }
     });
 });
