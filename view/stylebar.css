@@ -82,11 +82,11 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 600px; /* Max width for larger screens */
-    background-color: #555; /* Background color for the form */
-    border-radius: 20px; /* Rounded corners */
-    overflow: hidden; /* Hide overflow to maintain rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    max-width: 600px;
+    background-color: #555; 
+    border-radius: 20px; 
+    overflow: hidden; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
   }
   
   .search input[type="text"] {
@@ -95,10 +95,10 @@ body {
     outline: none;
     font-size: 16px;
     width: 100%;
-    max-width: 450px; /* Max width for input field */
+    max-width: 450px; 
     background-color: #555;
     color: #fff;
-    border-radius: 0; /* Remove rounded corners for input field */
+    border-radius: 0; 
   }
   
   .search button {
