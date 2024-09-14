@@ -1,7 +1,6 @@
 <style>
   .product-detail {
     margin-top: 30px;
-    /* Adjust according to your top bar height */
     margin-bottom: 10px;
     background: linear-gradient(to bottom, rgb(29, 229, 196), rgb(22, 108, 137));
     padding: 50px 0;
@@ -113,8 +112,6 @@
     overflow-y: auto;
   }
 
-
-  /* related product */
   .boxcenter {
     width: 60%;
     margin: 0 auto;
