@@ -1,5 +1,4 @@
 <?php
-    // chuyen logic vs database sang model de easy chinh sua
 
     function insert_danhmuc($tenloai){
         $sql="insert into danhmuc(name) values('$tenloai')";
