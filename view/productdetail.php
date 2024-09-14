@@ -696,7 +696,6 @@ if (isset($_SESSION['user'])) {
   }
 </script>
 <script>
-  // script.js
   let originalImageSrc = document.getElementById('product-image').src;
 
   function changeImage(imageSrc) {
@@ -715,7 +714,7 @@ if (isset($_SESSION['user'])) {
   const nextBtn = document.getElementById('next-btn');
 
   let scrollAmount = 0;
-  const scrollStep = 60; // Điều chỉnh bước cuộn
+  const scrollStep = 60;
 
   prevBtn.addEventListener('click', () => {
     slider.scrollBy({
@@ -750,7 +749,7 @@ if (isset($_SESSION['user'])) {
       nextBtn.disabled = false;
     }
   }
-  // Khởi tạo trạng thái ban đầu của các nút
+
   checkButtons();
 
   function toggleContent() {
