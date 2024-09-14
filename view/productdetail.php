@@ -423,7 +423,6 @@
     display: flex;
     overflow: hidden;
     width: 300px;
-    /* Điều chỉnh chiều rộng của slider */
   }
 
   .color-slider .thumbnail {
@@ -489,7 +488,6 @@
 
   .more-content.open {
     max-height: 500px;
-    /* Giá trị đủ lớn để hiển thị toàn bộ nội dung */
     opacity: 1;
   }
 
@@ -544,9 +542,7 @@ if (isset($_SESSION['user'])) {
             <div class="color-slider">
               <?php
               $file_names = show_file_names($onesp['id']);
-              // $images = explode(',', $file_names);
               foreach ($file_names as $hinhtuongtu) {
-                // $hinh = str_replace('/.', '/', $hinhtuongtu);
                 $hinh = "uploads/" . $hinhtuongtu;
               ?>
                 <img class="thumbnail" src="<?= $hinh ?>" alt="Color 1" onmouseover="changeImage('<?= $hinh ?>')">
@@ -554,7 +550,6 @@ if (isset($_SESSION['user'])) {
               <?php
               }
               ?>
-              <!-- Thêm các ảnh màu sắc khác nếu cần -->
             </div>
             <button id="next-btn">&gt;</button>
           </div>
@@ -608,6 +603,7 @@ if (isset($_SESSION['user'])) {
       </div>
     </div>
   </div>
+
   <!-- thong tin san pham dung voi parsedown -->
   <div class="content-container">
     <div id="product-info" class="content-box">
@@ -616,7 +612,7 @@ if (isset($_SESSION['user'])) {
         <p>This is a brief description of the product.</p>
         <div id="more-content" class="more-content">
           <?php
-          // show des without HTML code
+          // show desscription without HTML code
           $Parsedown = new Parsedown();
           $html = $Parsedown->text($info);
 
