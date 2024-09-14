@@ -59,19 +59,19 @@
     cursor: pointer;
     border-radius: 4px;
     transition: background-color 0.3s;
-    display: inline-flex; /* Display as inline-flex to align with text */
-    align-items: center; /* Center icon vertically */
-    text-decoration: none; /* Remove default underline for links */
+    display: inline-flex; 
+    align-items: center; 
+    text-decoration: none; 
 }
 
 .detail-btn i {
-    margin-right: 5px; /* Add spacing between icon and text */
+    margin-right: 5px; 
 }
 
 .detail-btn:hover {
     background-color: #40a9ff;
 }
-    /* Responsive styles */
+ 
     @media (max-width: 600px) {
         .detail-container {
             padding: 10px;
