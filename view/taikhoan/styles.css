@@ -30,12 +30,12 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 10px; /* Add gap for spacing between icon and text */
-    white-space: nowrap; /* Prevent text from wrapping */
+    gap: 10px; 
+    white-space: nowrap; 
 }
 
 .menu-item i {
-    font-size: 18px; /* Adjust icon size if needed */
+    font-size: 18px; 
 }
 
 .menu-item:hover {
