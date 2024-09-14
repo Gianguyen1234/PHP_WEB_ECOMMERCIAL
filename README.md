@@ -50,12 +50,12 @@ The system includes features like user authentication, order management, product
 
 ## Project Structure
 ```
-/admin           # for admin 
-/css            # for CSS styles
-/images      # for slide images
+/admin            # for admin 
+/css              # for CSS styles
+/images           # for slide images
 /model            # Database interaction using PDO
 /uploads          #for storing product images
-/vendor            # Composer dependencies
+/vendor           # Composer dependencies
 /view             # UI templates ( also UI logic)
 /index (Controller)            # handles the logic between Model and View
 
