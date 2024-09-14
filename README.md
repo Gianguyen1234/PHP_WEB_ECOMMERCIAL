@@ -8,12 +8,10 @@ The system includes features like user authentication, order management, product
 ## Table of Contents
 - [Features](#features)
 - [Tech Stack](#tech-stack)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
-- [Database Schema](#database-schema)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Features
 - User Registration/Login, Password Reset using Email Verification
@@ -60,7 +58,7 @@ The system includes features like user authentication, order management, product
 /assets            # Contains CSS, JS, and image files
 /config            # Configuration files (e.g., database config)
 /controllers       # Handles the logic for requests
-/models            # Database interaction classes
+/model            # Database interaction classes
 /views             # HTML templates
 /public            # Publicly accessible files (e.g., index.php)
 /vendor            # Composer dependencies
@@ -81,11 +79,5 @@ We welcome contributions! Here's how you can help:
 3. Commit your changes (`git commit -m 'Add new feature'`).
 4. Push to the branch (`git push origin feature/new-feature`).
 5. Create a Pull Request.
-
-Please ensure your code follows the PSR-12 coding standard and includes necessary tests.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ---
