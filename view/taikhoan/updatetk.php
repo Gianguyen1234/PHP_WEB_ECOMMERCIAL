@@ -5,13 +5,6 @@ if (isset($_SESSION['user'])) {
 ?>
 <div class="edit-profile-container">
     <div class="left-box">
-        <!-- <div class="avatar-box"> -->
-        <!-- <img src="avatar.png" alt="Avatar" class="avatar" id="avatar"> -->
-        <!-- <label for="avatar-upload" class="custom-file-upload"> -->
-        <!-- Choose Avatar -->
-        <!-- </label> -->
-        <!-- <input type="file" id="avatar-upload" name="avatar-upload" accept="image/*" hidden> -->
-        <!-- </div> -->
         <div class="parent-container">
         <div class="update-avatar-container">
             <img src="avatar.png" alt="avatar" class="update-avatar" id="update-avatar">

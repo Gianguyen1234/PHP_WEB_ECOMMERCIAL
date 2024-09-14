@@ -624,7 +624,7 @@ if (isset($_SESSION['user'])) {
       </div>
     </div>
   </div>
-  <!-- thong tin san pham -->
+  <!-- thong tin san pham dung voi parsedown -->
   <div class="content-container">
     <div id="product-info" class="content-box">
       <h2>Product Information</h2>
@@ -632,10 +632,10 @@ if (isset($_SESSION['user'])) {
         <p>This is a brief description of the product.</p>
         <div id="more-content" class="more-content">
           <?php
+          // show des without HTML code
           $Parsedown = new Parsedown();
           $html = $Parsedown->text($info);
 
-          // Output the parsed HTML
           echo $html;
 
           ?>
@@ -666,11 +666,6 @@ if (isset($_SESSION['user'])) {
         </li>';
         }
         ?>
-        <!-- <li class="card"> -->
-        <!-- <div class="img"><img src="product.jpg" alt="Product"></div> -->
-        <!-- <h2>Blanche person</h2> -->
-        <!-- <span>$49.99</span> -->
-        <!-- </li> -->
         <i id="right" class="fa-solid fa-angle-right"></i>
       </ul>
     </div>
