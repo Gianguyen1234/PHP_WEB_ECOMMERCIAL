@@ -1,5 +1,4 @@
 <style>
-    /* Style for select element */
     select {
         width: 100%;
         padding: 10px;
@@ -8,93 +7,82 @@
         box-sizing: border-box;
         margin-top: 5px;
         background-color: #fff;
-        /* Background color */
         color: #333;
-        /* Text color */
         font-size: 16px;
-        /* Font size */
         cursor: pointer;
     }
 
-    /* Style for selected option */
     option[selected] {
         background-color: orange;
-        /* Selected option background color */
         color: #fff;
-        /* Selected option text color */
     }
 
-    /* Style for options */
     option {
         background-color: #fff;
-        /* Options background color */
         color: #333;
-        /* Options text color */
     }
 </style>
 <?php
-    if (is_array($sanpham)) {
-        extract($sanpham);
-    }
-    $img_path = "../uploads/" . $image;
-    //ktra xem img_path co dc xuat tu file hay ko
-    if (is_file($img_path)) {
-        $images = "<img src='" . $img_path . "' height='80'>";
-    } else {
-        $images = "Image path is not found";
-    }
+if (is_array($sanpham)) {
+    extract($sanpham);
+}
+$img_path = "../uploads/" . $image;
+// Check if the img_path is accessible
+if (is_file($img_path)) {
+    $images = "<img src='" . $img_path . "' height='80'>";
+} else {
+    $images = "Image path is not found";
+}
 ?>
 <div class="form-container row">
     <div class="row frmtitle">
-        <h1>CẬP NHẬT LẠI HÀNG HÓA</h1>
+        <h1>UPDATE PRODUCT</h1>
     </div>
     <div class="row form-content">
         <form action="index.php?act=updatesp" method="post" enctype="multipart/form-data">
-            <div class="row ">
-                <label for="danhmucsanpham">DANH MỤC</label><br>
+            <div class="row">
+                <label for="danhmucsanpham">CATEGORY</label><br>
                 <select name="iddm">
-                    <option value="0">Tất cả</option>
+                    <option value="0">All</option>
                     <?php
-                        foreach ($listdanhmuc as $danhmuc) {
-                            $s = ($iddm == $danhmuc['id']) ? "selected" : ""; // Check if $iddm matches the current $danhmuc id
-                            echo '<option value="' . $danhmuc['id'] . '" ' . $s . '>' . $danhmuc['name'] . '</option>';
-                            
-                        }
+                    foreach ($listdanhmuc as $danhmuc) {
+                        $s = ($iddm == $danhmuc['id']) ? "selected" : ""; // Check if $iddm matches the current $danhmuc id
+                        echo '<option value="' . $danhmuc['id'] . '" ' . $s . '>' . $danhmuc['name'] . '</option>';
+                    }
                     ?>
                 </select>
-
             </div>
             <div class="row">
-                TÊN SẢN PHẨM<br>
-                <input type="text" name="tensp" value="<?=$name?>">
+                PRODUCT NAME<br>
+                <input type="text" name="tensp" value="<?= $name ?>">
             </div>
             <div class="row">
-                GIÁ<br>
-                <input type="text" name="giasp" value="<?=$price?>">
+                PRICE<br>
+                <input type="text" name="giasp" value="<?= $price ?>">
             </div>
             <div class="row">
-                HÌNH<br>
-                <?=$images?>
+                IMAGE<br>
+                <?= $images ?>
                 <input type="file" name="hinh">
             </div>
             <div class="row">
-                MÔ TẢ<br>
-                <textarea name="mota" cols="30" rows="10"><?=$description?></textarea>
+                DESCRIPTION<br>
+                <textarea name="mota" cols="30" rows="10"><?= $description ?></textarea>
             </div>
             <div class="row mb10">
-                <input type="hidden" name="id" value="<?=$id?>">
-                <input type="submit" name="capnhat" value="CẬP NHẬT">
-                <input type="reset" value="NHẬP LẠI">
-                <a href="index.php?act=listsp"><input type="button" value="DANH SÁCH"></a>
+                <input type="hidden" name="id" value="<?= $id ?>">
+                <input type="submit" name="capnhat" value="UPDATE">
+                <input type="reset" value="RESET">
+                <a href="index.php?act=listsp"><input type="button" value="LIST"></a>
             </div>
             <?php
-                $thanhcong = "Successfully!";
-                if (isset($thongbao) && $thongbao != "") {
-                    echo "<div id='notification' class='notification'>
-                    $thanhcong<br>
+            $successMessage = "Successfully!";
+            if (isset($thongbao) && $thongbao != "") {
+                echo "<div id='notification' class='notification'>
+                    $successMessage<br>
                     $thongbao
                     </div>";
-                }
+            }
             ?>
         </form>
     </div>

@@ -1,5 +1,4 @@
 <style>
-    /* Main content container */
     .main-container {
         width: 80%;
         margin: 50px auto;
