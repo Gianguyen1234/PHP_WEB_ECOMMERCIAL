@@ -10,19 +10,16 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
-    /* Form title styles */
     .frmtitle h1 {
         color: #333;
         text-align: center;
         margin-bottom: 20px;
     }
 
-    /* Form content styles */
     .frmcontent {
         margin-top: 20px;
     }
 
-    /* Table styles */
     .frmdsloai table {
         width: 100%;
         border-collapse: collapse;
@@ -48,7 +45,6 @@
         margin-bottom: 10px;
     }
 
-    /* Button styles */
     .rowkhac.mb10 input[type="button"] {
         padding: 10px 20px;
         border: none;
@@ -64,7 +60,7 @@
         background-color: #0b7dda;
     }
 
-    /* Link button styles */
+
     .rowkhac.mb10 a input[type="button"] {
         background-color: #4caf50;
     }
@@ -150,12 +146,11 @@
         <div class="row frmtitle">
             <H1>DANH SÁCH LOẠI HÀNG</H1>
         </div>
-        <!-- <div class="form-container"> -->
         <a href="index.php?act=adddm" class="btn-custom">
             <i class="fas fa-plus"></i>
             <input type="button" value="Nhập thêm">
         </a>
-        <!-- </div> -->
+
         <div class="rowkhac frmcontent">
             <div class="rowkhac mb10 frmdsloai">
                 <table>
