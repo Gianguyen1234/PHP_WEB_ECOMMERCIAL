@@ -1,9 +1,7 @@
 <style>
-    /* Main content container */
     .main-container {
         width: 60%;
         margin: 50px auto;
-        /* Centers the content horizontally */
         background-color: #f9f9f9;
         margin-top: 100px;
         padding: 30px;
@@ -18,33 +16,34 @@
         margin-bottom: 20px;
     }
 
-    /* Form content styles */
     .frmdsloai table {
-       width: 100%;
-       border-collapse: collapse;
-       background-color: #fff;
-       border-radius: 0.375rem; /* 6px */
-       overflow: hidden; /* Ensure rounded borders are visible */
-       box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* Shadow for the table */
-   }
-   .frmdsloai th,
-   .frmdsloai td {
-       border: 1px solid #edf2f7; /* Light gray border */
-       padding: 1rem; /* Padding for cells */
-       text-align: left;
-   }
-   .frmdsloai th {
-       background-color: #edf2f7; /* Light gray background for header */
-       font-weight: 600; /* Bold text for header */
-   }
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #fff;
+        border-radius: 0.375rem;
+        overflow: hidden;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    }
+
+    .frmdsloai th,
+    .frmdsloai td {
+        border: 1px solid #edf2f7;
+        padding: 1rem;
+        text-align: left;
+    }
+
+    .frmdsloai th {
+        background-color: #edf2f7;
+        font-weight: 600;
+    }
 
 
-    /* Button container styles */
+    /* Button container  */
     .rowkhac.mb10 {
         margin-bottom: 10px;
     }
 
-    /* Button styles */
+
     .rowkhac.mb10 input[type="submit"] {
         padding: 10px 20px;
         border: none;
@@ -55,7 +54,6 @@
         margin-left: 10px;
         transition: background-color 0.3s ease;
         float: right;
-        /* Thêm thuộc tính float: right; */
         animation: pulse 1.5s infinite;
     }
 
@@ -98,51 +96,47 @@
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
-        /* Đảm bảo kích thước của input bao gồm cả border và padding */
     }
 
     input[type="text"]:focus {
         border-color: #007bff;
-        /* Màu khi input được focus */
         outline: none;
-        /* Loại bỏ đường viền khi focus */
     }
 
-    /* Định dạng cho cột ảnh */
     .product-image {
         max-width: 50px;
         height: auto;
     }
 
-    /* Định dạng cho tổng cộng */
+    /*  cho tổng cộng */
     tfoot td {
         font-weight: bold;
     }
-/* phương thức thanh toán */
-.payment-method {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 12px;
-    background-color: #f7fafc; /* Light gray background */
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
 
-.payment-method span {
-    font-weight: 600;
-    font-size: 20px;
-    margin-right: 10px;
-    color: #2d3748; /* Darker text color */
-}
+    /* phương thức thanh toán */
+    .payment-method {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 12px;
+        background-color: #f7fafc;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
 
-.payment-method label {
-    margin-right: 15px;
-    font-size: 16px;
-    color: #4a5568; /* Medium gray text */
-}
+    .payment-method span {
+        font-weight: 600;
+        font-size: 20px;
+        margin-right: 10px;
+        color: #2d3748;
+    }
 
+    .payment-method label {
+        margin-right: 15px;
+        font-size: 16px;
+        color: #4a5568;
+    }
 </style>
 <div class="main-container">
     <div class="rowkhac">
@@ -176,7 +170,7 @@
                         </tr>
                         <tr>
                             <td>
-                               Address
+                                Address
                             </td>
                             <td>
                                 <input type="text" name="address" value="<?= $address ?>" required>
@@ -285,7 +279,6 @@
                     form.action = "link-to-paypal-payment";
                 }
 
-                // Thêm các điều kiện khác nếu cần
             });
         }
     });

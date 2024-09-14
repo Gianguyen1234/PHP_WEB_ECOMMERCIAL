@@ -146,7 +146,6 @@
         margin-right: 30px;
         font-size: 14px;
         transition: border-color 0.3s, background-color 0.3s;
-        /* Tạo hiệu ứng chuyển đổi cho viền và màu nền */
     }
 
     .linkdonhang a input:focus {
