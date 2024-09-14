@@ -249,13 +249,9 @@
 
   .carousel {
     background-color: #666;
-    /* Màu nền chính của Dracula */
     padding: 20px;
-    /* Khoảng cách giữa các phần tử trong carousel */
     border-radius: 8px;
-    /* Bo góc cho carousel */
     overflow: hidden;
-    /* Ẩn các phần vượt ra ngoài khung carousel */
   }
 
   .carousel li a {
@@ -324,7 +320,6 @@
     cursor: pointer;
   }
 
-  /* Media Queries for Responsive Design */
   @media screen and (max-width: 768px) {
     .comment {
       padding: 15px;
@@ -354,26 +349,18 @@
 
   .login-message {
     background-color: #f8d7da;
-    /* Màu nền */
     color: #721c24;
-    /* Màu chữ */
-    padding: 50px;
-    /* Khoảng cách giữa nội dung và viền */
+    padding: 50px; 
     border: 1px solid #f5c6cb;
-    /* Viền */
     border-radius: 5px;
-    /* Góc bo tròn */
     margin-bottom: 100px;
-    /* Khoảng cách dưới cùng */
   }
 
   .login-message a {
     color: #721c24;
-    /* Màu chữ cho link */
     text-decoration: underline;
-    /* Gạch chân cho link */
     font-weight: bold;
-    /* Đậm cho link */
+
   }
 
   .info-item {
