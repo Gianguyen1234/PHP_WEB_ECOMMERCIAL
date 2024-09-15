@@ -2,13 +2,13 @@
 </body>
 </html>
 <script>
-    // JavaScript to hide the notification after 3 seconds
+// hide the notification after 3 seconds
 window.onload = function() {
     var notification = document.getElementById('notification');
     if (notification) {
         setTimeout(function() {
             notification.style.display = 'none';
-        }, 2000); // 2 seconds
+        }, 2000); 
     }
 };
 
