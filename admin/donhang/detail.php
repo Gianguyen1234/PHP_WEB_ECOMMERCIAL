@@ -93,7 +93,6 @@
             color: #333;
         }
 
-        /* Responsive styles */
         @media (max-width: 600px) {
             .detail-container {
                 padding: 10px;
