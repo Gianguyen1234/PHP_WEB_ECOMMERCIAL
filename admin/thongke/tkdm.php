@@ -40,8 +40,8 @@
      text-align: left;
  }
  .frmdsloai th {
-     background-color: #edf2f7; /* Light gray background for header */
-     font-weight: 600; /* Bold text for header */
+     background-color: #edf2f7; 
+     font-weight: 600; 
  }
 
 /* Button container styles */
