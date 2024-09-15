@@ -48,7 +48,6 @@
 </head>
 
 <body>
-    <!-- Chart will be drawn here -->
     <div id="revenue_chart" style="width: 900px; height: 600px; margin-top:100px;margin-left:600px;"></div>
 </body>
 
