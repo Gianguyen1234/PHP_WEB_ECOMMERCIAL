@@ -50,17 +50,17 @@ The system includes features like user authentication, order management, product
 
 ## Project Structure
 ```
-/admin            # for admin 
-/css              # for CSS styles
-/images           # for slide images
-/model            # Database interaction using PDO
-/uploads          # for storing product images
-/vendor           # Composer dependencies
-/view             # UI templates ( also UI logic)
+/admin                         # for admin 
+/css                           # for CSS styles
+/images                        # for slide images
+/model                         # Database interaction using PDO
+/uploads                       # for storing product images
+/vendor                        # Composer dependencies
+/view                          # UI templates ( also UI logic)
 /index (Controller)            # handles the logic between Model and View
 
 ```
-
+ ### MVC Architecture:
 - **Models**: Handle data interactions with the database.
 - **Views**: HTML templates for the user interface.
 - **Controllers**: Handle requests and responses.
