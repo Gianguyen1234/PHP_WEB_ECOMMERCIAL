@@ -260,7 +260,8 @@ document.getElementById('image-upload').addEventListener('change', function() {
             img.style.maxWidth = '100px';
             img.style.marginTop = '10px';
             document.querySelector('.comment-content').appendChild(img);
-            document.getElementById('image-url').value = e.target.result; // Lưu URL hình ảnh vào input ẩn
+            // Lưu URL hình ảnh vào input ẩn
+            document.getElementById('image-url').value = e.target.result; 
         }
         reader.readAsDataURL(this.files[0]);
     }
@@ -299,13 +300,14 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
     $('.reply-form').on('submit', function(event){
-        event.preventDefault(); // Ngăn chặn hành vi mặc định của form
+        // Ngăn chặn hành vi mặc định của form
+        event.preventDefault(); 
         
         var form = $(this);
         var formData = form.serialize();
         
         $.ajax({
-            url: 'view/binhluan/process_reply.php', // Cập nhật URL cho đúng
+            url: 'view/binhluan/process_reply.php', 
             method: 'POST',
             data: formData,
             success: function(response){
@@ -315,7 +317,7 @@ $(document).ready(function(){
                                    '<small>at ' + response.created_at + '</small>' +
                                    '</div>';
                     form.before(newReply);
-                    form.find('textarea').val(''); // Clear textarea
+                    form.find('textarea').val(''); 
                 } else {
                     location.reload();
                   
