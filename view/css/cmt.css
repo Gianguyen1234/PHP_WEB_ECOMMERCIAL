@@ -1,93 +1,99 @@
 /* comment */
 .main-content {
-    flex: 1;
-    background-color: #f4f4f4;
-    overflow-y: auto;
+  flex: 1;
+  background-color: #f4f4f4;
+  overflow-y: auto;
 }
-  
-  /* related product */
-  .boxcenter {
-    width: 60%;
-    margin: 0 auto;
+
+/* related product */
+.boxcenter {
+  width: 60%;
+  margin: 0 auto;
 }
+
 /* cai nay danh cho san pham chi tiet */
-.border-under-dt{
+.border-under-dt {
   background-color: none;
-  inline-size: 100%; 
-  border-block-end: 2px black solid ;
+  inline-size: 100%;
+  border-block-end: 2px black solid;
 }
-.mt{
+
+.mt {
   margin-top: 100px;
 }
+
 .comment-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
 
-  .comment {
-    width: 100%;
-    max-width: 1100px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    padding: 20px;
-    display: flex;
-    gap: 10px;
-  }
+.comment {
+  width: 100%;
+  max-width: 1100px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+}
 
-  .user-image {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    overflow: hidden;
-  }
+.user-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
 
-  .user-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.user-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-  .comment-content {
-    flex-grow: 1;
-    background-color: #f9f9f9;
-    padding: 15px;
-    border-radius: 10px;
-    position: relative;
-  }
+.comment-content {
+  flex-grow: 1;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  position: relative;
+}
 
-  .comment-text {
-    margin-bottom: 10px;
-  }
-    .comment-author {
-    font-weight: bold;
-  }
+.comment-text {
+  margin-bottom: 10px;
+}
 
-  textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    resize: vertical;
-  }
+.comment-author {
+  font-weight: bold;
+}
 
-  input[type="submit"] {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  /* Media Queries for Responsive Design */
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Media Queries for Responsive Design */
 @media screen and (max-width: 768px) {
   .comment {
     padding: 15px;
   }
+
   .user-image {
     width: 40px;
     height: 40px;
@@ -100,39 +106,27 @@
     flex-direction: column;
     align-items: flex-start;
   }
+
   .comment-content {
     margin-top: 10px;
   }
+
   input[type="submit"] {
     padding: 8px 16px;
   }
 }
+
 .login-message {
-  background-color: #f8d7da; /* Màu nền */
-  color: #721c24; /* Màu chữ */
-  padding: 50px; /* Khoảng cách giữa nội dung và viền */
-  border: 1px solid #f5c6cb; /* Viền */
-  border-radius: 5px; /* Góc bo tròn */
-  margin-bottom: 100px; /* Khoảng cách dưới cùng */
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 50px;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  margin-bottom: 100px;
 }
 
 .login-message a {
-  color: #721c24; /* Màu chữ cho link */
-  text-decoration: underline; /* Gạch chân cho link */
-  font-weight: bold; /* Đậm cho link */
+  color: #721c24;
+  text-decoration: underline;
+  font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

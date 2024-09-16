@@ -91,14 +91,10 @@
 
     .cart-product-details img {
         width: 80px;
-        /* Adjust image width as needed */
         height: auto;
         margin-right: 20px;
-        /* Add spacing between image and other details */
         border-radius: 4px;
-        /* Add a border radius for rounded corners */
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        /* Add a subtle shadow effect */
     }
 
     .cart-product-info {
@@ -114,7 +110,6 @@
     .cart-product-name {
         display: inline-block;
         width: 100px;
-        /* Adjust width as needed */
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -138,11 +133,8 @@
 
     .quantity {
         width: 60px;
-        /* Default width for input */
         padding: 5px;
-        /* Default padding */
         margin-right: 30px;
-        /* Default margin */
         margin-left: 30px;
     }
 
@@ -172,7 +164,7 @@
         font-weight: bold;
     }
 
-    /* Định dạng cho phương thức thanh toán */
+    /* phương thức thanh toán */
     .payment-method {
         margin-top: 20px;
         display: flex;
@@ -251,12 +243,10 @@
     .payment-option.selected {
         border-color: #15d167;
         background-color: #f0f0f0;
-        /* Highlighted background for the selected option */
     }
 
     .payment-option:hover {
         border-color: #15d167;
-        /* Highlight on hover */
     }
 
     .size {
@@ -328,7 +318,6 @@
             echo "<p>Your cart is empty</p>";
         }
         ?>
-        <!-- Add more product entries as needed -->
     </div>
     <div class="right-box">
         <div class="summary">
@@ -367,7 +356,7 @@
 </div>
 
 <script>
-    // JavaScript code to update total price when quantity changes;
+    //update total price when quantity changes;
 
     document.addEventListener('DOMContentLoaded', function() {
         var quantities = document.querySelectorAll('.quantity');
