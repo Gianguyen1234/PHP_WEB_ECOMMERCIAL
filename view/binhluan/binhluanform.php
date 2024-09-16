@@ -23,18 +23,18 @@ textarea {
  }
    
 .comment .button-group {
-    margin-top: 5px; /* Khoảng cách giữa hình ảnh và các nút */
+    margin-top: 5px; 
 }
 
 .comment .like-btn,
 .comment .reply-btn {
-    display: inline-block; /* Hiển thị các nút trên cùng một dòng */
-    margin-right: 10px; /* Khoảng cách giữa các nút */
+    display: inline-block;
+    margin-right: 10px; 
    
 }
 
 .comment .reply-btn i {
-    margin-right: 5px; /* Khoảng cách giữa icon và chữ */
+    margin-right: 5px; 
 }
 
 .comment .like-btn {
@@ -107,7 +107,6 @@ textarea {
 .reply-form button:hover {
     background-color: #2d4373;
 }
-
 
 </style>
 <?php
