@@ -87,9 +87,9 @@ function toggleChat() {
 
     if (username.trim() === '' || password.trim() === '') {
         alert('You need to fill in your full name, email, and password!');
-        return false; // Ngăn chặn gửi form nếu thông tin không hợp lệ
+        return false; 
     }
-    return true; // Cho phép gửi form nếu thông tin hợp lệ
+    return true;
   }
 
   function hideErrorMessage() {
@@ -103,9 +103,9 @@ function toggleChat() {
     // Kiểm tra xem hai mật khẩu có giống nhau không
     if (newPassword !== confirm) {
         alert("Password and Confirm Password do not match.");
-        return false; // Ngăn chặn gửi form nếu mật khẩu không khớp
+        return false; 
     }
-    return true; // Cho phép gửi form nếu mật khẩu khớp
+    return true; 
 }
 
 
