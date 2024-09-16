@@ -1,4 +1,4 @@
-/* styles.css */
+
 body {
     font-family: Verdana, sans-serif;
     margin: 0;
@@ -17,9 +17,9 @@ body {
 .mySlides img {
     width: 100%;
     margin-top: 100px;;
-    height: 500px; /* Adjust this height as needed */
-    object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
-    object-position: center; /* Centers the image */
+    height: 500px;
+    object-fit: cover; 
+    object-position: center;
 }
 
 .text {
