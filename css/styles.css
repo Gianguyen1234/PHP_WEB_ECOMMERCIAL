@@ -95,7 +95,8 @@ body {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 16px;}
   }
-  /* Top Bar Styles */
+  
+  /* Top Bar */
   .top-bar {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -105,7 +106,7 @@ body {
     padding: 10px 20px;
     position: fixed;
     top: 0;
-    left: 250px; /* Adjusted to match sidebar width */
+    left: 250px;
     right: 0;
     z-index: 999;
   }
