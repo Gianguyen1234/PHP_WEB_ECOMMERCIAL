@@ -7,9 +7,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['comment_id'])) {
     $query = "select user_likes from binhluan where id = $comment_id";
     $current_likes = pdo_query_one($query);
     if ($current_likes) {
-        $current_likes_value = (int)$current_likes['user_likes']; // Ép kiểu về số nguyên
+        $current_likes_value = (int)$current_likes['user_likes']; 
     } else {
-        $current_likes_value = 0; // Nếu không tìm thấy bản ghi, thiết lập số like là 0
+        // Nếu không tìm thấy bản ghi, thiết lập số like là 0
+        $current_likes_value = 0; 
     }
 
     // Tăng số lượng like lên 1

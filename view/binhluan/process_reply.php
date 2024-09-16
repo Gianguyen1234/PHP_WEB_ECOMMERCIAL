@@ -14,7 +14,7 @@ include "../../model/binhluan.php";
        $response = [
         'success' => true,
         'reply_content' => $rep_content,
-        'created_at' => $rep_date // Thời gian hiện tại
+        'created_at' => $rep_date 
         ];
 
     echo json_encode($response);
