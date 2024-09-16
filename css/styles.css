@@ -266,7 +266,6 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  /* margin-right: 250px; */
 }
 
 .row {
@@ -277,7 +276,7 @@ body {
   margin-top: 20px;
 }
 
-/* Input field styles */
+/* Input field */
 .row .form-content input[type="text"],
 .row .form-content input[type="submit"],
 .row .form-content input[type="reset"],
@@ -285,7 +284,6 @@ body {
 .row .form-content input[type="email"],
 .row .form-content input[type="password"] {
   width: calc(100% - 22px);
-  /* Adjusted width */
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -310,21 +308,21 @@ body {
   transition: border-color 0.3s ease;
 }
 
-/* Submit button styles */
+/* Submit button */
 .row .form-content input[type="submit"] {
   background-color: #4caf50;
   color: white;
   cursor: pointer;
 }
 
-/* Reset button styles */
+/* Reset button  */
 .row .form-content input[type="reset"] {
   background-color: #f44336;
   color: white;
   cursor: pointer;
 }
 
-/* Link button styles */
+/* Link button */
 .row .form-content input[type="button"] {
   background-color: #2196f3;
   color: white;
