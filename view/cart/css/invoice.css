@@ -51,11 +51,10 @@ th {
     margin-left: 40px;
     transition: background-color 0.3s ease;
     float: right;
-    /* Thêm thuộc tính float: right; */
     animation: pulse 1.5s infinite;
 }
 a.button {
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
 }
 .customer-info {
     margin-bottom: 20px;
