@@ -303,6 +303,7 @@
                 include "view/hoidap/contact_form.php";
                 break;
 
+
             default:
                 include "view/home.php";
                 break;

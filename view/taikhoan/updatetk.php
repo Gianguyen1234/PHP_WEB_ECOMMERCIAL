@@ -6,14 +6,15 @@ if (isset($_SESSION['user'])) {
 <div class="edit-profile-container">
     <div class="left-box">
         <div class="parent-container">
-        <div class="update-avatar-container">
-            <img src="avatar.png" alt="avatar" class="update-avatar" id="update-avatar">
-            <div class="update-menu" id="update-avatar-menu">
-                <div class="update-menu-item"><i class="fas fa-eye"></i> Xem ảnh đại diện</div>
-                <div class="update-menu-item"><i class="fas fa-upload"></i> Cập nhật ảnh đại diện</div>
-                <div class="update-menu-item"><i class="fas fa-trash"></i> Xoá ảnh đại diện hiện tại</div>
+            <div class="update-avatar-container">
+                <img src="avatar.png" alt="avatar" class="update-avatar" id="update-avatar">
+                <div class="update-menu" id="update-avatar-menu">
+                    <div class="update-menu-item"><i class="fas fa-eye"></i> Xem ảnh đại diện</div>
+                    <div class="update-menu-item"><i class="fas fa-upload"></i> Cập nhật ảnh đại diện</div>
+                    <div class="update-menu-item"><i class="fas fa-trash"></i> Xoá ảnh đại diện hiện tại</div>
+                </div>
             </div>
-        </div>
+            <input type="file" id="avatar-upload" name="avatar" style="display: none;">
         </div>
         <div class="username-box">
             <h2><?= $name ?></h2>
@@ -62,37 +63,64 @@ if (isset($_SESSION['user'])) {
     </div>
 </div>
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-    const avatar = document.getElementById('update-avatar');
-    const menu = document.getElementById('update-avatar-menu');
+    document.addEventListener('DOMContentLoaded', () => {
+        const avatar = document.getElementById('update-avatar');
+        const menu = document.getElementById('update-avatar-menu');
 
-    avatar.addEventListener('click', () => {
-        if (menu.style.display === 'none' || menu.style.display === '') {
-            menu.style.display = 'block';
-            setTimeout(() => {
-                menu.style.opacity = '1';
-                menu.style.transform = 'translateY(0)';
-            }, 10); 
-        } else {
-            menu.style.opacity = '0';
-            menu.style.transform = 'translateY(-10px)';
-            setTimeout(() => {
-                menu.style.display = 'none';
-            }, 300);
-        }
+        avatar.addEventListener('click', () => {
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'block';
+                setTimeout(() => {
+                    menu.style.opacity = '1';
+                    menu.style.transform = 'translateY(0)';
+                }, 10);
+            } else {
+                menu.style.opacity = '0';
+                menu.style.transform = 'translateY(-10px)';
+                setTimeout(() => {
+                    menu.style.display = 'none';
+                }, 300);
+            }
+        });
+
+        // Close the menu when clicking outside
+        document.addEventListener('click', (event) => {
+            if (!avatar.contains(event.target) && !menu.contains(event.target)) {
+                menu.style.opacity = '0';
+                menu.style.transform = 'translateY(-10px)';
+                setTimeout(() => {
+                    menu.style.display = 'none';
+                }, 300);
+            }
+        });
+    });
+    document.querySelector('.update-menu-item:first-child').addEventListener('click', () => {
+        const avatarSrc = document.getElementById('update-avatar').src;
+        window.open(avatarSrc, '_blank');
     });
 
-    // Close the menu when clicking outside
-    document.addEventListener('click', (event) => {
-        if (!avatar.contains(event.target) && !menu.contains(event.target)) {
-            menu.style.opacity = '0';
-            menu.style.transform = 'translateY(-10px)';
-            setTimeout(() => {
-                menu.style.display = 'none';
-            }, 300); 
-        }
+    // Upload new avatar
+    document.querySelector('.update-menu-item:nth-child(2)').addEventListener('click', () => {
+        document.getElementById('avatar-upload').click();
     });
-});
+    // Khi chọn tệp, gửi tệp lên máy chủ và cập nhật ảnh đại diện
+    document.addEventListener('DOMContentLoaded', () => {
+        const avatar = document.getElementById('update-avatar');
+        const avatarUploadInput = document.getElementById('avatar-upload');
+        const uploadAvatarBtn = document.querySelector('.update-menu-item:nth-child(2)');
+
+        // Mở hộp thoại chọn tệp khi nhấp vào "Cập nhật ảnh đại diện"
+        uploadAvatarBtn.addEventListener('click', () => {
+            avatarUploadInput.click();
+        });
+      
+    });
 
 
+
+    // Delete avatar 
+    document.querySelector('.update-menu-item:nth-child(3)').addEventListener('click', () => {
+        const defaultAvatar = 'avatar.png';
+        avatar.src = defaultAvatar;
+    });
 </script>
