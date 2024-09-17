@@ -4,7 +4,7 @@
 <div class="main-container">
     <div class="row">
         <div class="row frmtitle">
-            <H1>DANH SÁCH LOẠI HÀNG</H1>
+            <H1>SHOW LIST OF PRODUCTS</H1>
         </div>
         <a href="index.php?act=adddm" class="btn-custom">
             <i class="fas fa-plus"></i>
@@ -16,9 +16,9 @@
                 <table>
                     <tr>
                         <th></th>
-                        <th>MÃ LOẠI</th>
-                        <th>TÊN LOẠI</th>
-                        <th>THAO TÁC</th>
+                        <th>PRODUCT ID</th>
+                        <th>PRODUCT NAME</th>
+                        <th>ACTION</th>
                     </tr>
                     <?php
 
