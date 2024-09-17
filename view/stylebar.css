@@ -121,8 +121,6 @@ body {
   .search button:hover {
     background-color: rgb(9, 157, 248);
   }
-  
-  /* Responsive Design */
   @media (max-width: 600px) {
     .search input[type="text"] {
       font-size: 14px; 
@@ -361,7 +359,6 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     gap: 20px; 
-    /* gap: 20px; */
 }
 .product-card {
     background-color: #fff;
@@ -489,7 +486,6 @@ body {
     background-color: #f4f4f4;
     overflow-y: auto;
 }
-/* slideshow */
 
 /* Slideshow container */
 .slideshow-container {
@@ -535,7 +531,6 @@ body {
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
   }
-  /* Caption text with typing animation */
 .slide-text {
     color: #000;
     font-size: 36px;
@@ -798,7 +793,6 @@ body {
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Headline styling */
 .signup-container h2 {
     font-size: 24px;
     text-align: center;
@@ -808,12 +802,10 @@ body {
     margin-bottom: 24px;
 }
 
-/* Form group styling */
 .signup-container form .form-group {
     margin-bottom: 16px;
 }
 
-/* Input field styling */
 .signup-container form .form-group input {
     width: 100%;
     padding: 12px;
@@ -825,7 +817,6 @@ body {
     color: #2D3748;
 }
 
-/* Label styling */
 .signup-container form .form-group label {
     display: block;
     margin-bottom: 8px;
@@ -833,14 +824,12 @@ body {
     color: #4A5568;
 }
 
-/* Input focus state styling */
 .signup-container form .form-group input:focus {
     border-color: #3182CE;
     box-shadow: 0 0 0 1px #3182CE;
     outline: none;
 }
 
-/* Button styling */
 .signup-container .btn-primary,
 .signup-container .btn-google,
 .signup-container .btn-facebook {
@@ -856,7 +845,6 @@ body {
     color: #ffffff;
 }
 
-/* Primary button styling */
 .signup-container .btn-primary {
     background-color: #3182CE;
 }
@@ -866,7 +854,6 @@ body {
     box-shadow: 0 0 0 1px #2B6CB0;
 }
 
-/* Google button styling */
 .signup-container .btn-google {
     background-color: #EA4335;
 }
@@ -876,7 +863,6 @@ body {
     box-shadow: 0 0 0 1px #C53030;
 }
 
-/* Facebook button styling */
 .signup-container .btn-facebook {
     background-color: #3B5998;
 }
@@ -886,13 +872,11 @@ body {
     box-shadow: 0 0 0 1px #2D4373;
 }
 
-/* Margin adjustments */
 .mar-bottom {
     margin-bottom: 50px;
     margin-top: 100px;
 }
 
-/* Media Queries for Tablet */
 @media only screen and (max-width: 768px) {
     .signup-container {
         padding: 24px;
@@ -909,7 +893,6 @@ body {
     }
 }
 
-/* Media Queries for Mobile */
 @media only screen and (max-width: 480px) {
     .signup-container {
         padding: 16px;
@@ -942,7 +925,6 @@ body {
     animation: fadeInUp 0.5s forwards;
 }
 
-/* Animation for container */
 @keyframes fadeInUp {
     to {
         opacity: 1;
@@ -950,7 +932,6 @@ body {
     }
 }
 
-/* Headline styling */
 .signin-container h2 {
     font-size: 30px;
     text-align: center;
@@ -962,7 +943,6 @@ body {
     animation-delay: 0.2s;
 }
 
-/* Animation for headline */
 @keyframes fadeInDown {
     to {
         opacity: 1;
@@ -970,7 +950,6 @@ body {
     }
 }
 
-/* Form group styling */
 .signin-container .form-group {
     margin-bottom: 20px;
     opacity: 0;
@@ -979,7 +958,6 @@ body {
     animation-delay: 0.4s;
 }
 
-/* Label styling */
 .signin-container .form-group label {
     display: block;
     margin-bottom: 5px;
@@ -987,7 +965,6 @@ body {
     color: #555;
 }
 
-/* Input field styling */
 .signin-container .form-group input {
     width: 100%;
     padding: 10px;
@@ -997,14 +974,12 @@ body {
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-/* Input focus state styling */
 .signin-container .form-group input:focus {
     border-color: #3182CE;
     box-shadow: 0 0 0 1px #3182CE;
     outline: none;
 }
 
-/* Button styling */
 .signin-container .btn-primary {
     width: 100%;
     padding: 10px;
@@ -1026,7 +1001,6 @@ body {
     box-shadow: 0 0 0 1px #0056b3;
 }
 
-/* Link styling */
 .signin-container a {
     display: block;
     text-decoration: none;
@@ -1041,7 +1015,6 @@ body {
     color: #003f87;
 }
 
-/* Media Queries for Tablet */
 @media only screen and (max-width: 768px) {
     .signin-container {
         padding: 20px;
@@ -1053,7 +1026,6 @@ body {
     }
 }
 
-/* Media Queries for Mobile */
 @media only screen and (max-width: 480px) {
     .signin-container {
         padding: 15px;
@@ -1075,7 +1047,7 @@ body {
     background-color: #f8f9fa; 
 }
 
-/* Left box styling */
+/* Left box */
 .left-box {
     width: 30%;
     background-color: white;
@@ -1115,7 +1087,7 @@ body {
 }
 
 
-/* Username box styling */
+/* Username box  */
 .username-box {
     text-align: center;
 }
@@ -1138,7 +1110,7 @@ body {
     margin: 20px 0;
 }
 
-/* Navigation box styling */
+/* Navigation box  */
 .navigation-box ul {
     list-style-type: none;
     padding: 0;
@@ -1183,7 +1155,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Form styling */
+/* Form edit profile */
 .form-edit-profile {
     margin-bottom: 20px;
 }
