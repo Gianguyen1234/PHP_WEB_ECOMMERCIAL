@@ -28,7 +28,7 @@ function toggleChat() {
 
     // Tên và hình ảnh của chatbot
     var botName = "Chatbot";
-    var botAvatar = "avatar.png"; // Đường dẫn đến hình ảnh avatar của chatbot
+    var botAvatar = "avatar.png"; 
 
     // Xử lý các vấn đề và đưa ra câu trả lời tương ứng
     if (question === 'origin') {
