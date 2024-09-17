@@ -124,7 +124,7 @@
                         // Display pagination links
                         for ($i = 1; $i <= $totalPages; $i++) {
                             echo '<a href="index.php?page=' . $i . '" class="pagination-btn';
-                            echo $page == $i ? ' active' : ''; // Add 'active' class to current page link
+                            echo $page == $i ? ' active' : ''; 
                             echo '"><button>' . $i . '</button></a>';
                         }
                         // Next button
