@@ -242,6 +242,7 @@
                 include "view/cart/billconfirm.php";
                 break;
             case 'mybill':
+                $listbill = load_all_bill_by_user($_SESSION['user']['id']);
                 include "view/cart/bill_status.php";
                 break;
             case 'checkout':
@@ -258,7 +259,7 @@
                     $order_date = date('D, d M Y H:i:s');
                     // insert into order bill
                     $idorder = insert_order_bill($iduser, $order_name, $order_address, $order_email, $order_tel, $grandtotal, $payment_method, $order_date);
-                    $phiship = 15;
+                    $phiship = 0;
                     $sum_money = 0 +  $phiship;
                     for ($i = 0; $i < count($_SESSION['mycart']); $i++) {
                         $image[$i] = $_SESSION['mycart'][$i][1];
