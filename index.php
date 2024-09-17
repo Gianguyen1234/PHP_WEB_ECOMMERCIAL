@@ -73,7 +73,7 @@
                         //$thongbao = "ban da dang nhap thanh cong";
                         header('Location: index.php');
                     }else {
-                        $thongbao = "Invalid email or password. Please try again."; // Thông báo khi nhập sai email hoặc mật khẩu
+                        $thongbao = "Invalid email or password. Please try again."; 
                     }                       
                  
                 }

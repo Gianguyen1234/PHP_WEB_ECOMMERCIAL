@@ -14,5 +14,5 @@ mail($admin_email, $subject, $message, $headers);
 
 // Chuyển hướng người dùng sau khi gửi email thành công
 header('Location: http://localhost/client(webbanhang)/index.php?act=hoidap');
-// Đảm bảo rằng script dừng lại sau khi chuyển hướng
+
 ?>
