@@ -1,22 +1,22 @@
 <div class="main-content">
     <div class="form-container row">
         <div class="row frmtitle">
-            <h1>THÊM MỚI LOẠI HÀNG HÓA</h1>
+            <h1>ADD NEW PRODUCT</h1>
         </div>
         <div class="row form-content">
             <form action="index.php?act=adddm" method="post">
                 <div class="row ">
-                    MÃ LOẠI <br>
+                    ID <br>
                     <input type="text" name="maloai" disabled>
                 </div>
                 <div class="row">
-                    TÊN LOẠI <br>
+                    PRODUCT NAME <br>
                     <input type="text" name="tenloai">
                 </div>
                 <div class="row mb ">
-                    <input type="submit" name="themmoi" value="THÊM MỚI">
-                    <input type="reset" value="NHẬP LẠI">
-                    <a href="index.php?act=listdm"> <input type="button" value="DANH SÁCH"></a>
+                    <input type="submit" name="themmoi" value="ADD NEW">
+                    <input type="reset" value="RESET">
+                    <a href="index.php?act=listdm"> <input type="button" value="LIST OF PRODUCTS"></a>
                 </div>
                 <?php
                 $thanhcong = "Successfully!";
