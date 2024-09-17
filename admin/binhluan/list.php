@@ -4,7 +4,7 @@
 <div class="main-container">
     <div class="row">
         <div class="row frmtitle">
-            <H1>DANH SÁCH BÌNH LUẬN</H1>
+            <H1>LIST OF COMMENTS</H1>
         </div>
         <div class="rowkhac frmcontent">
             <div class="rowkhac mb10 frmdsloai">
@@ -12,10 +12,10 @@
                     <tr>
                         <th></th>
                         <th>ID</th>
-                        <th>NỘI DUNG</th>
-                        <th>ID SẢN PHẨM</th>
+                        <th>CONTENT</th>
+                        <th>PRODUCT ID</th>
                         <th>USER</th>
-                        <th>NGÀY BÌNH LUẬN</th>
+                        <th>COMMENT DATE</th>
                         <th></th>
                     </tr>
                     <?php
@@ -36,16 +36,16 @@
                                 <td>' . $iduser . '</td>
                                 <td>' . $commentdate . '</td>
                                 <td>
-                                <a href="' . $xoabl . '" class="icon-button red"><i class="fas fa-trash-alt"></i> Xóa</a>
+                                <a href="' . $xoabl . '" class="icon-button red"><i class="fas fa-trash-alt"></i> Delete</a>
                             </tr>';
                     }
                     ?>
                 </table>
             </div>
             <div class="rowkhac mb10">
-                <input type="button" value="Chọn tất cả">
-                <input type="button" value="Bỏ chọn tất cả">
-                <input type="button" value="Xóa các mục đã chọn">
+                <input type="button" value="Select All">
+                <input type="button" value="Deselect All">
+                <input type="button" value="Delete Selected Items">
             </div>
         </div>
     </div>
