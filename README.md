@@ -26,7 +26,7 @@ The system includes features like user authentication, order management, product
 - **Backend**: PHP 8.1.10
 - **Frontend**: HTML, CSS, JavaScript
 - **Database**: MySQL
-- **Additional Libraries**: jQuery (for UI interactions), fontawsome ( for using icon)
+- **Additional Libraries**: jQuery (for UI interactions), fontawsome ( for using icon), parsedown ( for parsing html code)
 - **Version Control**: Git
 - **Hosting Enviroment**: Laragon ( for local development)
 
