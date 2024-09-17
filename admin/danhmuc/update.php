@@ -5,23 +5,23 @@
 ?>
 <div class="form-container row">
      <div class="row frmtitle"> 
-         <h1>CẬP NHẬT LẠI TÊN DANH MỤC</h1>
+         <h1>UPDATE CATEGORY NAME</h1>
      </div>
      <div class="row form-content">
          <form action="index.php?act=updatedm" method="post">
              <div class="row">
-                 MÃ LOẠI <br>
+                 CATEGORY ID <br>
                  <input type="text" name="maloai" disabled>
              </div>
              <div class="row">
-                 TÊN LOẠI <br>
+                 CATEGORY NAME<br>
                  <input type="text" name="tenloai" value="<?php if(isset($name)&&($name!="")){echo $name;} ?>">
              </div>
              <div class="row">
                  <input type="hidden" name="id" value="<?php if(isset($id)&&($id>0)){echo $id;}?>">
-                 <input type="submit" name="capnhat" value="CẬP NHẬT">
-                 <input type="reset" value="NHẬP LẠI">
-                 <a href="index.php?act=listdm"> <input type="button" value="DANH SÁCH"></a>
+                 <input type="submit" name="capnhat" value="UPDATE">
+                 <input type="reset" value="RESET">
+                 <a href="index.php?act=listdm"> <input type="button" value="LIST OF PRODUCTS"></a>
              </div>
 
              <?php
