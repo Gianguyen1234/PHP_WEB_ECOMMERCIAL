@@ -34,8 +34,8 @@
                                 <td>' . $id . '</td>
                                 <td>' . $name . '</td>
                                 <td>
-                                <a href="' . $suadm . '" class="icon-button blue"><i class="fas fa-edit"></i> Sửa</a>
-                                <a href="' . $xoadm . '" class="icon-button red"><i class="fas fa-trash-alt"></i> Xóa</a>                                
+                                <a href="' . $suadm . '" class="icon-button blue"><i class="fas fa-edit"></i> Edit</a>
+                                <a href="' . $xoadm . '" class="icon-button red"><i class="fas fa-trash-alt"></i> Delete</a>                                
                                 </td>  
                             </tr>';
                     }
@@ -43,9 +43,9 @@
                 </table>
             </div>
             <div class="rowkhac mb10">
-                <input type="button" value="Chọn tất cả">
-                <input type="button" value="Bỏ chọn tất cả">
-                <input type="button" value="Xóa các mục đã chọn">
+                <input type="button" value="Select All">
+                <input type="button" value="Deselect All">
+                <input type="button" value="Delete Selected Item">
             </div>
         </div>
     </div>
