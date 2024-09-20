@@ -103,14 +103,6 @@
                             ';
                     }
                     ?>
-                    <!-- <div class="product-card"> -->
-                    <!-- <img src="product.jpg" alt="Clothes 1"> -->
-                    <!-- <div class="product-info"> -->
-                    <!-- <h3>Cool Shirt</h3> -->
-                    <!-- <p class="price">$29.99</p> -->
-                    <!-- <p class="voucher">Use code <span class="code">COOL10</span> for 10% off</p> -->
-                    <!-- </div> -->
-                    <!-- </div> -->
                 </div>
 
                 <div class="boxpage">
