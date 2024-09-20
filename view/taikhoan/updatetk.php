@@ -102,13 +102,12 @@ if (isset($_SESSION['user'])) {
 	document.querySelector('.update-menu-item:nth-child(2)').addEventListener('click', () => {
     	document.getElementById('avatar-upload').click();
 	});
-	// Khi chọn tệp, gửi tệp lên máy chủ và cập nhật ảnh đại diện
+	// select avatar from file image
 	document.addEventListener('DOMContentLoaded', () => {
     	const avatar = document.getElementById('update-avatar');
     	const avatarUploadInput = document.getElementById('avatar-upload');
     	const uploadAvatarBtn = document.querySelector('.update-menu-item:nth-child(2)');
 
-    	// Mở hộp thoại chọn tệp khi nhấp vào "Cập nhật ảnh đại diện"
     	uploadAvatarBtn.addEventListener('click', () => {
         	avatarUploadInput.click();
     	});
