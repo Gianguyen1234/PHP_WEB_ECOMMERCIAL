@@ -1,6 +1,4 @@
-<?php
-    // chuyen logic vs database sang model de easy chinh sua
-
+<?php 
     function insert_sanpham($name_sp,$price_sp,$file_name,$descript_sp,$iddm,$file_names,$info){
         $sql="insert into sanpham(name,price,image,description,iddm,file_names,info) values('$name_sp','$price_sp','$file_name','$descript_sp','$iddm','$file_names','$info')";
         pdo_execute($sql);
@@ -21,7 +19,6 @@
             $sql.=" and iddm ='".$iddm."'";
         }
         $sql.=" order by id desc";
-        // show list danh muc
         $listsanpham=pdo_query($sql);
         return $listsanpham;
     }
@@ -37,11 +34,6 @@
         return $listsanpham;
     }
     function update_sanpham($id, $iddm, $name_sp, $price_sp, $descript_sp, $file_name){
-        // Update the database with the new values
-        // Example:
-        // $query = "UPDATE your_table SET iddm = '$iddm', tensp = '$tensp', giasp = '$giasp', mota = '$mota' WHERE id = '$id'";
-        // Execute the query and perform necessary error handling
-        // Redirect or display a success message
         if ($file_name!="") {
             $sql="update sanpham set iddm='$iddm', name='$name_sp', price='$price_sp', image='$file_name', description='$descript_sp' where id= '$id'";
         }else {
@@ -51,14 +43,15 @@
         pdo_execute($sql);
 
     }
+    // new product release
     function load_sanpham_home(){
         // gioi han chi co 9 sp moi nhat hien len
         $sql="select * from sanpham where 1 order by id desc limit 0,10 ";
         $listsanpham=pdo_query($sql);
         return $listsanpham;
     }
+    //top products with high view
     function load_top_sanpham(){
-        // gioi han chi co 8 sp top hien len
         $sql="select * from sanpham where 1 order by view desc limit 8";
         $topsp=pdo_query($sql);
         return $topsp;
