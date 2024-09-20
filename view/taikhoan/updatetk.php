@@ -63,61 +63,60 @@ if (isset($_SESSION['user'])) {
     </div>
 </div>
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const avatar = document.getElementById('update-avatar');
-        const menu = document.getElementById('update-avatar-menu');
+	document.addEventListener('DOMContentLoaded', () => {
+    	const avatar = document.getElementById('update-avatar');
+    	const menu = document.getElementById('update-avatar-menu');
 
-        avatar.addEventListener('click', () => {
-            if (menu.style.display === 'none' || menu.style.display === '') {
-                menu.style.display = 'block';
-                setTimeout(() => {
-                    menu.style.opacity = '1';
-                    menu.style.transform = 'translateY(0)';
-                }, 10);
-            } else {
-                menu.style.opacity = '0';
-                menu.style.transform = 'translateY(-10px)';
-                setTimeout(() => {
-                    menu.style.display = 'none';
-                }, 300);
-            }
-        });
+    	avatar.addEventListener('click', () => {
+        	if (menu.style.display === 'none' || menu.style.display === '') {
+            	menu.style.display = 'block';
+            	setTimeout(() => {
+                	menu.style.opacity = '1';
+                	menu.style.transform = 'translateY(0)';
+            	}, 10);
+        	} else {
+            	menu.style.opacity = '0';
+            	menu.style.transform = 'translateY(-10px)';
+            	setTimeout(() => {
+                	menu.style.display = 'none';
+            	}, 300);
+        	}
+    	});
+    	// Close the menu 
+    	document.addEventListener('click', (event) => {
+        	if (!avatar.contains(event.target) && !menu.contains(event.target)) {
+            	menu.style.opacity = '0';
+            	menu.style.transform = 'translateY(-10px)';
+            	setTimeout(() => {
+                	menu.style.display = 'none';
+            	}, 300);
+        	}
+    	});
+	});
+	document.querySelector('.update-menu-item:first-child').addEventListener('click', () => {
+    	const avatarSrc = document.getElementById('update-avatar').src;
+    	window.open(avatarSrc, '_blank');
+	});
 
-        // Close the menu when clicking outside
-        document.addEventListener('click', (event) => {
-            if (!avatar.contains(event.target) && !menu.contains(event.target)) {
-                menu.style.opacity = '0';
-                menu.style.transform = 'translateY(-10px)';
-                setTimeout(() => {
-                    menu.style.display = 'none';
-                }, 300);
-            }
-        });
-    });
-    document.querySelector('.update-menu-item:first-child').addEventListener('click', () => {
-        const avatarSrc = document.getElementById('update-avatar').src;
-        window.open(avatarSrc, '_blank');
-    });
+	// Upload new avatar
+	document.querySelector('.update-menu-item:nth-child(2)').addEventListener('click', () => {
+    	document.getElementById('avatar-upload').click();
+	});
+	// Khi chọn tệp, gửi tệp lên máy chủ và cập nhật ảnh đại diện
+	document.addEventListener('DOMContentLoaded', () => {
+    	const avatar = document.getElementById('update-avatar');
+    	const avatarUploadInput = document.getElementById('avatar-upload');
+    	const uploadAvatarBtn = document.querySelector('.update-menu-item:nth-child(2)');
 
-    // Upload new avatar
-    document.querySelector('.update-menu-item:nth-child(2)').addEventListener('click', () => {
-        document.getElementById('avatar-upload').click();
-    });
-    // Khi chọn tệp, gửi tệp lên máy chủ và cập nhật ảnh đại diện
-    document.addEventListener('DOMContentLoaded', () => {
-        const avatar = document.getElementById('update-avatar');
-        const avatarUploadInput = document.getElementById('avatar-upload');
-        const uploadAvatarBtn = document.querySelector('.update-menu-item:nth-child(2)');
+    	// Mở hộp thoại chọn tệp khi nhấp vào "Cập nhật ảnh đại diện"
+    	uploadAvatarBtn.addEventListener('click', () => {
+        	avatarUploadInput.click();
+    	});
 
-        // Mở hộp thoại chọn tệp khi nhấp vào "Cập nhật ảnh đại diện"
-        uploadAvatarBtn.addEventListener('click', () => {
-            avatarUploadInput.click();
-        });
-
-    });
-    // Delete avatar 
-    document.querySelector('.update-menu-item:nth-child(3)').addEventListener('click', () => {
-        const defaultAvatar = 'avatar.png';
-        avatar.src = defaultAvatar;
-    });
+	});
+	// Delete avatar
+	document.querySelector('.update-menu-item:nth-child(3)').addEventListener('click', () => {
+    	const defaultAvatar = 'avatar.png';
+    	avatar.src = defaultAvatar;
+	});
 </script>
