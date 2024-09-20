@@ -14,7 +14,6 @@
     }
     function fetch_list_taikhoan(){
         $sql="select * from taikhoan order by id desc";
-        // show list tk
         $listtaikhoan=pdo_query($sql);
         return $listtaikhoan;
     }
