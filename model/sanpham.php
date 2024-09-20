@@ -85,29 +85,21 @@
         if ($iddm > 0) {
             $sql .= " AND iddm ='" . $iddm . "'";
         }
-            // $sql .= " ORDER BY id DESC LIMIT $limit OFFSET $offset";
             $sql .= " ORDER BY id  LIMIT $limit OFFSET $offset";
-        // Thực hiện truy vấn SQL
         $listsanpham = pdo_query($sql);
         return $listsanpham;
         
     }
 
+    // implement pagination for product in menu
     function getTotalPages($iddm, $limit) {
-        // Câu truy vấn SQL để đếm tổng số truyện trong thể loại đã chọn
-        $sql = 'SELECT COUNT(*) as total FROM sanpham WHERE iddm = ?';
-   
-        // Sử dụng hàm pdo_query để thực hiện câu truy vấn
-        $result = pdo_query($sql, $iddm);
-    
-        // Lấy tổng số lượng truyện từ kết quả truy vấn
+        $sql = 'SELECT COUNT(*) as total FROM sanpham WHERE iddm = ?';  
+        $result = pdo_query($sql, $iddm);   
         if (isset($result[0]['total'])) {
             $totalTruyen = $result[0]['total'];
         } else {
             $totalTruyen = 0;
         }
-   
-        // Tính tổng số trang
         $totalPages = ceil($totalTruyen / $limit);
         return $totalPages;
     }
