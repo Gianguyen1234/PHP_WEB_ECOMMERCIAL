@@ -1,17 +1,14 @@
-/* comment */
 .main-content {
   flex: 1;
   background-color: #f4f4f4;
   overflow-y: auto;
 }
 
-/* related product */
 .boxcenter {
   width: 60%;
   margin: 0 auto;
 }
 
-/* cai nay danh cho san pham chi tiet */
 .border-under-dt {
   background-color: none;
   inline-size: 100%;
