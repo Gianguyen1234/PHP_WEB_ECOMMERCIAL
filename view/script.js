@@ -64,8 +64,7 @@ function toggleChat() {
     `;
 
     chatMessages.appendChild(messageElement);
-      // Cuộn xuống để hiển thị tin nhắn mới
-      chatMessages.scrollTop = chatMessages.scrollHeight;
+    chatMessages.scrollTop = chatMessages.scrollHeight;
 }
 
   document.getElementById('left').addEventListener('click', slideLeft);

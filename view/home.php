@@ -20,7 +20,6 @@
 
                     foreach ($history as $history) {
                         extract($history);
-                        // $linkct = "index.php?act=sanphamct&idsp=" . $id;
                 ?>
                         <ul>
                             <li><a href="<?= $linkct ?>" class="history"><?= $product_name ?></a></li>
@@ -38,7 +37,6 @@
         <!-- slide show -->
             <!-- Slideshow container -->
             <div class="slideshow-container">
-
                 <!-- Full-width images with number and caption text -->
                 <div class="mySlides slide">
 
@@ -83,10 +81,12 @@
                     <?php
                     include "pagination_func.php";
                     $perPage = 8; // Number of products per page
-                    $page = isset($_GET['page']) ? $_GET['page'] : 1; // Get the current page number
+                    $page = isset($_GET['page']) ? $_GET['page'] : 1; 
                     $totalProducts = getTotalProductsCount();
-                    $totalPages = ceil($totalProducts / $perPage); // Calculate total pages
-                    $products = getProductsByPage($page, $perPage); // Get products for the current page
+                    // Calculate total pages
+                    $totalPages = ceil($totalProducts / $perPage); 
+                    // Get products for the current page
+                    $products = getProductsByPage($page, $perPage); 
                     foreach ($products as $product) {
                         extract($product);
                         $linkct = "index.php?act=sanphamct&idsp=" . $id;

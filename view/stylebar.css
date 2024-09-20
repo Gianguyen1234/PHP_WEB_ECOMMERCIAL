@@ -499,7 +499,6 @@ body {
     display: none;
   }
   
-  /* Adjust image height and crop */
   .mySlides img {
     width: 100%;
     max-height: 500px; 
@@ -545,7 +544,6 @@ body {
     animation: typing 3s steps(40, end) forwards; 
   }
   
-  /* Keyframes for the typing animation */
   @keyframes typing {
     from {
       width: 0;
@@ -554,9 +552,6 @@ body {
       width: 100%;
     }
   }
-  
-  
-  /* The dots/bullets/indicators */
   .dot {
     cursor: pointer;
     height: 15px;
