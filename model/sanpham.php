@@ -112,12 +112,9 @@
         return $totalPages;
     }
     
-
-
+    // update the user click on product
     function fetch_and_display_view($id){
-        // Cập nhật số lượt xem cho sản phẩm
         $sql_update = "UPDATE sanpham SET view = view + 1 WHERE id = $id";
-         // Chuẩn bị và thực thi truy vấn cập nhật
         pdo_execute($sql_update);
 
     }
@@ -132,13 +129,16 @@
         return $history;
 
     }
+    // show product relative images
     function show_file_names($idpro){
         $sql = "select file_names from sanpham where id = $idpro";
         $result = pdo_query($sql);    
         if (!empty($result)) {
-            return explode(',', $result[0]['file_names']); // Chuyển chuỗi thành mảng các tên file
+            // Chuyển chuỗi thành mảng các tên file
+            return explode(',', $result[0]['file_names']); 
         } else {
-            return []; // Trả về mảng rỗng nếu không có dữ liệu
+            // Trả về mảng rỗng nếu không có dữ liệu
+            return []; 
         }
     }
     function show_info_sp($id){
