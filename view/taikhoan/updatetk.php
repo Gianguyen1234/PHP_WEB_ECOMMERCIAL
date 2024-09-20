@@ -113,11 +113,8 @@ if (isset($_SESSION['user'])) {
         uploadAvatarBtn.addEventListener('click', () => {
             avatarUploadInput.click();
         });
-      
+
     });
-
-
-
     // Delete avatar 
     document.querySelector('.update-menu-item:nth-child(3)').addEventListener('click', () => {
         const defaultAvatar = 'avatar.png';
