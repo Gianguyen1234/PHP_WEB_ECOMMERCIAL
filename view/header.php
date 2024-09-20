@@ -7,10 +7,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="view/stylebar.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
-  <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> -->
-  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
 
@@ -25,7 +21,6 @@
       <div class="menu">
         <ul>
           <li>
-            <!-- <a href="index.php?act=danhmucsp"><i class="fas fa-bars"></i> Danhmuc</a> -->
             <div class="dropdown">
               <button class="dropbtn">
                 <i class="fa fa-bars"></i>
