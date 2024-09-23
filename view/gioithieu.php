@@ -160,9 +160,8 @@
                 const card = cards[index];
                 const typingText = card.querySelector('.typing-text');
                 const text = typingText.innerHTML;
-
                 typingText.innerHTML = ''; 
-                card.classList.add('visible'); // Show the card
+                card.classList.add('visible'); 
                 typeText(typingText, text, 0, () => {
                     setTimeout(() => showCard(index + 1), delayBetweenTexts);
                 });
