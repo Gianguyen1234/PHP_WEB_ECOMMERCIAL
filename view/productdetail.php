@@ -117,7 +117,6 @@
     margin: 0 auto;
   }
 
-  /* cai nay danh cho san pham chi tiet */
   .border-under-dt {
     background-color: none;
     inline-size: 100%;
@@ -258,7 +257,6 @@
     text-decoration: none;
   }
 
-  /* comment */
   .comment-container {
     display: flex;
     flex-direction: column;
@@ -514,17 +512,12 @@
 session_start();
 extract($onesp);
 $images = "uploads/" . $image;
-//ktra xem nguoi dung co dang nhap hay khong
 if (isset($_SESSION['user'])) {
-  //lay user id de them vao table
   $userid = $_SESSION['user']['id'];
-  //product id thi lay tu onesp
   $idproduct = $onesp['id'];
   $productname = $onesp['name'];
-  //luu vao lich su truy cap san pham
   insert_history($userid, $idproduct, $productname);
 }
-// var_dump($info); // Kiểm tra giá trị $info
 ?>
 <div class="main-content">
   <!-- detail product -->
