@@ -131,11 +131,9 @@
 
         for (var i = 0; i < radioButtons.length; i++) {
             radioButtons[i].addEventListener("change", function() {
-                // Nếu radio button 1 được chọn
                 if (this.value === "1") {
                     form.action = "index.php?act=billconfirm";
                 }
-                // Nếu radio button 2 được chọn
                 else if (this.value === "2") {
                     form.action = "index.php?act=checkout";
                 } else if (this.value === "3") {
