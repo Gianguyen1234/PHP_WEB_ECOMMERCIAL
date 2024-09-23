@@ -26,13 +26,11 @@
         $act=$_GET['act'];
         switch ($act) {
             case 'danhmucsp':
-                // Retrieve search keyword
                 $keyword = isset($_POST['keyword']) ? $_POST['keyword'] : "";
-                // Retrieve category ID
                 $iddm = (isset($_GET['iddm']) && $_GET['iddm'] > 0 ) ? $_GET['iddm'] : 0;
                 // Pagination setup
                 $limit = 8; // so sp cua 1 trang
-                $page = isset($_GET['pages']) ? $_GET['pages'] : 1; // Current page
+                $page = isset($_GET['pages']) ? $_GET['pages'] : 1; 
                 $dmsp = fetch_list_danhmucsanpham($keyword, $iddm, $page, $limit);
                 $totalPages = getTotalPages($iddm, $limit);
                 // echo 'Tổng số trang: ' . $totalPages;
@@ -45,7 +43,7 @@
                     $id = $_GET['idsp'];
                     fetch_and_display_view($id);
                     $onesp = loadone_sanpham($id);
-                    extract($onesp);// extract onesp de lay iddm tu sanpham table
+                    extract($onesp);
                     $sp_cungloai = load_sp_cungloai($id,$iddm);
                     $info = show_info_sp($iddm);
                     include "view/productdetail.php";
@@ -70,7 +68,6 @@
                     $checkuser =  checkuser($username,$password);
                     if (is_array($checkuser)) {
                         $_SESSION['user']=$checkuser;
-                        //$thongbao = "ban da dang nhap thanh cong";
                         header('Location: index.php');
                     }else {
                         $thongbao = "Invalid email or password. Please try again."; 
@@ -100,7 +97,6 @@
                     $sql = "select * from taikhoan where email= '".$email."'";
                     $check = pdo_query_one($sql);
                     if (is_array($check)) {
-                        // $thongbao = "mat khau la: ".$check['password'];
                         $token = bin2hex(random_bytes(16));
                         $token_hash = hash("sha256", $token);
                         date_default_timezone_set('Asia/Ho_Chi_Minh');
@@ -112,8 +108,7 @@
                         // update_token($token_hash,$expiry,$email);
                         // sendPasswordResetLink($email,$token_hash);
                     }else{
-                        $thongbao = "Email này không tồn tại!";
-                        // $thongbao = "mat khau la: ".$check['password'];
+                        $thongbao = "Email is invalid";
                     }
 
                 }
