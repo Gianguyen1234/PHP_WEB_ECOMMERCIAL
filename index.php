@@ -105,8 +105,6 @@
                         pdo_execute($sql);
                         $thongbao = "Kiểm tra Gmail và check link để đặt lại password";
                         sendPasswordResetLink($email,$token_hash);
-                        // update_token($token_hash,$expiry,$email);
-                        // sendPasswordResetLink($email,$token_hash);
                     }else{
                         $thongbao = "Email is invalid";
                     }
@@ -117,9 +115,7 @@
             case 'updatepassword':
                 $email = $_GET['email'];
                 $token = $_GET['token'];
-                  // Check if the form is submitted
                 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['capnhatmk'])) {
-                // Get the new password from the form
                 $new_password = $_POST['new_password'];
                 $email = $_POST['email'];            
                 update_password($new_password,$email);
@@ -144,7 +140,6 @@
                     $name = $_POST['name'];
                     $price = $_POST['price'];
                     $quantity = 1;
-                    // $tongtien = $quantity * $price;
                     $spadd = [$id,$images,$name,$price,$quantity];
                 
                     $index_in_cart = -1;
