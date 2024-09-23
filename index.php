@@ -217,14 +217,11 @@
                         
 
                     }
-                    $_SESSION['mycart']= [];
-                    
-
+                    $_SESSION['mycart']= [];               
 
                 }
                 $bill = loadone_order($idorder);
-                $billct = loadall_cart($idorder);
-                
+                $billct = loadall_cart($idorder);                
                
                 include "view/cart/billconfirm.php";
                 break;
@@ -244,7 +241,6 @@
                     $payment_method = $_POST['payment_method'];
                     date_default_timezone_set('Asia/Ho_Chi_Minh');
                     $order_date = date('D, d M Y H:i:s');
-                    // insert into order bill
                     $idorder = insert_order_bill($iduser, $order_name, $order_address, $order_email, $order_tel, $grandtotal, $payment_method, $order_date);
                     $phiship = 0;
                     $sum_money = 0 +  $phiship;
@@ -282,7 +278,7 @@
                         header('Location: http://localhost/client(webbanhang)/index.php?act=hoidap');
                         exit(); // Dừng script
                     } else {
-                        // Xử lý khi không thể gửi email
+                        
                         echo "Gửi email thất bại. Vui lòng thử lại.";
                     }
                 }
