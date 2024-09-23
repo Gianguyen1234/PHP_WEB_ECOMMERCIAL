@@ -1,7 +1,6 @@
 <?php
 include "../../model/pdo.php";
 include "../../model/binhluan.php";
-// header('Content-Type: application/json');
     if ($_SERVER['REQUEST_METHOD'] == 'POST' ) {
        
        $cmtid = $_POST['comment_id'];
@@ -18,7 +17,6 @@ include "../../model/binhluan.php";
         ];
 
     echo json_encode($response);
-       
-
+     
     }
 ?>
