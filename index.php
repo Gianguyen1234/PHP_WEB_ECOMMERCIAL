@@ -155,7 +155,6 @@
                     else
                     {
                         $_SESSION['mycart'][$index_in_cart][4]++;
-                        // $_SESSION['mycart'][$index_in_cart][5] += $price;
                     }
 
                 }
