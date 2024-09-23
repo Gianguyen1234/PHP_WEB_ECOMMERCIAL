@@ -188,7 +188,6 @@
             case 'billconfirm':
                 if(isset($_SESSION['user'])) $iduser = $_SESSION['user']['id']; 
                 else $id=0;
-                //tao bill
                 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['accept'])) {
                     $order_name = $_POST['name'];
                     $order_address = $_POST['address'];
@@ -198,7 +197,6 @@
                     $payment_method = $_POST['payment_method'];
                     date_default_timezone_set('Asia/Ho_Chi_Minh');
                     $order_date = date('D, d M Y H:i:s');
-                    // insert into order bill
                    $idorder=insert_order_bill($iduser,$order_name,$order_address,$order_email,$order_tel,$grandtotal,$payment_method, $order_date);
                    
                     
