@@ -2,12 +2,11 @@ function toggleSidebar() {
     const sidebar = document.querySelector('.sidebar');
     sidebar.classList.toggle('active');
 }
-// toggle mở chat bot
 function toggleChat() {
     var chatContainer = document.querySelector('.chat-container');
     chatContainer.style.display = chatContainer.style.display === 'none' ? 'block' : 'none';
   }
-// gửi tin nhắn 
+
   function sendMessage() {
     var inputField = document.querySelector('.chat-input input');
     var message = inputField.value;
@@ -26,11 +25,9 @@ function toggleChat() {
   function showAnswer(question) {
     var chatMessages = document.getElementById('chatMessages');
 
-    // Tên và hình ảnh của chatbot
     var botName = "Chatbot";
     var botAvatar = "avatar.png"; 
 
-    // Xử lý các vấn đề và đưa ra câu trả lời tương ứng
     if (question === 'origin') {
       var message = "Our products are sourced from reputable manufacturers around the world, including Vietnam and other countries. We are committed to providing high-quality products and ensuring that all products comply with safety and environmental standards.";
     } else if (question === 'quality') {
@@ -48,8 +45,6 @@ function toggleChat() {
     }
   
   
-                                  
-    // Tạo một phần tử div mới chứa avatar, tên và nội dung tin nhắn của chatbot
     var messageElement = document.createElement('div');
     messageElement.classList.add('bot-message');
     messageElement.innerHTML = `
@@ -99,7 +94,6 @@ function toggleChat() {
     var newPassword = document.getElementById('new_password').value;
     var confirm = document.getElementById('confirm').value;
 
-    // Kiểm tra xem hai mật khẩu có giống nhau không
     if (newPassword !== confirm) {
         alert("Password and Confirm Password do not match.");
         return false; 
