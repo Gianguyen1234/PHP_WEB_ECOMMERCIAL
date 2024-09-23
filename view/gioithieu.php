@@ -161,7 +161,7 @@
                 const typingText = card.querySelector('.typing-text');
                 const text = typingText.innerHTML;
 
-                typingText.innerHTML = ''; // Clear the text for typing effect
+                typingText.innerHTML = ''; 
                 card.classList.add('visible'); // Show the card
                 typeText(typingText, text, 0, () => {
                     setTimeout(() => showCard(index + 1), delayBetweenTexts);
