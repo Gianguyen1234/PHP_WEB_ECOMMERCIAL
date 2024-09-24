@@ -109,17 +109,17 @@
 
                     <div class="pagination " id="pagination">
                         <?php
-                        // Previous button
+                        
                         if ($page > 1) {
                             echo '<a href="index.php?page=' . ($page - 1) . '" class="pagination-btn"><button>Prev</button></a>';
                         }
-                        // Display pagination links
+                       
                         for ($i = 1; $i <= $totalPages; $i++) {
                             echo '<a href="index.php?page=' . $i . '" class="pagination-btn';
                             echo $page == $i ? ' active' : ''; 
                             echo '"><button>' . $i . '</button></a>';
                         }
-                        // Next button
+                       
                         if ($page < $totalPages) {
                             echo '<a href="index.php?page=' . ($page + 1) . '" class="pagination-btn"><button>Next</button></a>';
                         }
@@ -153,7 +153,7 @@
             </div>
         </div>
     </div>
-    <!-- chat -->
+
     <div class="chat-icon" onclick="toggleChat()">
         <i class="fas fa-comments"></i>
         <div class="tooltip">Chat</div>
