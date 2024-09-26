@@ -233,14 +233,11 @@ body {
   overflow-y: auto;
 }
 
-
-/* related product */
 .boxcenter {
   width: 60%;
   margin: 0 auto;
 }
 
-/* cai nay danh cho san pham chi tiet */
 .border-under-dt {
   background-color: none;
   inline-size: 100%;
@@ -370,7 +367,6 @@ body {
   }
 }
 
-/* comment */
 .comment-container {
   display: flex;
   flex-direction: column;
@@ -405,11 +401,7 @@ body {
 
 .comment-content {
   flex-grow: 1;
-  /* width: 100%; */
-  /* padding: 10px; */
-  /* border: 1px solid #ccc; */
-  /* border-radius: 5px; */
-  /* resize: vertical; */
+
 }
 
 .comment-text {
