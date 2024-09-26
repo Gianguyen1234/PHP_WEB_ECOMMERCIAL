@@ -597,7 +597,7 @@ if (isset($_SESSION['user'])) {
     </div>
   </div>
 
-  <!-- thong tin san pham dung voi parsedown -->
+  <!-- product information with  parsedown -->
   <div class="content-container">
     <div id="product-info" class="content-box">
       <h2>Product Information</h2>
@@ -605,7 +605,7 @@ if (isset($_SESSION['user'])) {
         <p>This is a brief description of the product.</p>
         <div id="more-content" class="more-content">
           <?php
-          // show desscription 
+          // show  product desscription 
           $Parsedown = new Parsedown();
           $html = $Parsedown->text($info);
 
