@@ -528,8 +528,8 @@ if (isset($_SESSION['user'])) {
           <?php
           echo '<img id="product-image"  src="' . $images . '" alt="Product Image">';
           ?>
-          <!-- <img src="" alt="Product Image"> -->
-          <!-- ảnh nhỏ cho sản phẩm chi tiết -->
+          
+          <!-- relative images -->
           <div class="color-slider-container">
             <button id="prev-btn">&lt;</button>
             <div class="color-slider">
