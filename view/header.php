@@ -52,7 +52,6 @@
       if (isset($_SESSION['user'])) {
         extract($_SESSION['user']);
       ?>
-        <!-- <div class="user-name">         -->
           <div class="user-info">
             <div class="user-icon">
             <a href="index.php?act=updatetk"><i class="fas fa-user-circle"></i></a>
@@ -62,7 +61,6 @@
             </div>           
             <a style="color:white;" href="index.php?act=thoat"><i class="fas fa-sign-out-alt"></i>Logout</a>           
           </div>
-        <!-- </div> -->
       <?php
       } else {
       ?>
