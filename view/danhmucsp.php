@@ -23,7 +23,7 @@
     <!-- end sidebar -->
     <div class="main-content">
         <div class="product-container margin-top">
-            <!-- Hien danh muc san pham -->
+            <!-- show product menu -->
             <div class="border-under">
                 <h1><i class="fas fa-font-awesome"></i> Product <?= $tendm ?></h1>
             </div>
@@ -43,11 +43,10 @@
                         </div>
                         </div>';
                 }
-
                 ?>
 
             </div>
-            <!-- Phan trang -->
+            <!-- pagination -->
             <div class="boxpage">
                 <div class="pagination " id="pagination">
                     <?php  
@@ -55,7 +54,7 @@
                     if ($page > 1) {
                         echo '<a href="index.php?act=danhmucsp&iddm=' . $iddm . '&pages=' . ($page - 1) . '" class="pagination-btn"><button>Prev</button></a>';
                     }
-                    // Display pagination links
+                    // Display pagination number
                     for ($i = 1; $i <= $totalPages; $i++) {
                         echo '<a href="index.php?act=danhmucsp&iddm=' . $iddm . '&pages=' . $i . '" class="pagination-btn';
                         echo $page == $i ? ' active' : ''; 
@@ -68,7 +67,7 @@
                     ?>
                 </div>
             </div>
-            <!-- end phan trang -->
+            <!-- end pagination -->
         </div>
     </div>
 </div>
