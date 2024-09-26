@@ -680,8 +680,7 @@ if (isset($_SESSION['user'])) {
     const mainImage = document.getElementById('product-image');
     mainImage.src = originalImageSrc;
   }
-
-
+  
   const slider = document.querySelector('.color-slider');
   const prevBtn = document.getElementById('prev-btn');
   const nextBtn = document.getElementById('next-btn');
