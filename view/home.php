@@ -42,15 +42,12 @@
                     <img src="images/slide.png" style="width:100%">
                     <div class="slide-text">Men's Fashion</div>
                 </div>
-
                 <div class="mySlides slide">
-
                     <img src="images/slide2.png" style="width:100%">
                     <div class="slide-text">Be the first to have this item</div>
                 </div>
 
                 <div class="mySlides slide">
-
                     <img src="images/slide3.png" style="width:100%">
                     <div class="slide-text">Up To 50% OFF</div>
                 </div>
