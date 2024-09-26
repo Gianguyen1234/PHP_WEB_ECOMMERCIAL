@@ -37,7 +37,6 @@
         <!-- slide show -->
             <!-- Slideshow container -->
             <div class="slideshow-container">
-                <!-- Full-width images with number and caption text -->
                 <div class="mySlides slide">
 
                     <img src="images/slide.png" style="width:100%">
@@ -72,7 +71,7 @@
 
         <!-- end slideshow -->
 
-            <!-- Mở đầu cho New Release -->
+            <!--  New Release -->
             <div class="product-container margin-top">
                 <div class="border-under">
                     <h1><i class="fas fa-font-awesome"></i> New Release</h1>
@@ -80,7 +79,7 @@
                 <div class="product-row">
                     <?php
                     include "pagination_func.php";
-                    $perPage = 8; // Number of products per page
+                    $perPage = 8; 
                     $page = isset($_GET['page']) ? $_GET['page'] : 1; 
                     $totalProducts = getTotalProductsCount();
                     // Calculate total pages
