@@ -605,7 +605,7 @@ if (isset($_SESSION['user'])) {
         <p>This is a brief description of the product.</p>
         <div id="more-content" class="more-content">
           <?php
-          // show desscription without HTML code
+          // show desscription 
           $Parsedown = new Parsedown();
           $html = $Parsedown->text($info);
 
@@ -617,7 +617,7 @@ if (isset($_SESSION['user'])) {
       </div>
     </div>
   </div>
-  <!-- san pham cung loai -->
+  <!-- relative products -->
   <div class="boxcenter">
     <div class="border-under-dt">
       <h1><i class="fa-solid fa-equals"></i> Related Products</h1>
@@ -723,7 +723,7 @@ if (isset($_SESSION['user'])) {
   }
   checkButtons();
 
-  
+
   function toggleContent() {
     const moreContent = document.getElementById('more-content');
     const toggleBtn = document.getElementById('content-toggle-btn');
