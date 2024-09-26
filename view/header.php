@@ -8,8 +8,6 @@
   <link rel="stylesheet" href="view/stylebar.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-
-
 </head>
 
 <body>
@@ -52,15 +50,15 @@
       if (isset($_SESSION['user'])) {
         extract($_SESSION['user']);
       ?>
-          <div class="user-info">
-            <div class="user-icon">
+        <div class="user-info">
+          <div class="user-icon">
             <a href="index.php?act=updatetk"><i class="fas fa-user-circle"></i></a>
-            </div>
-            <div class="user-name">
-                <a href="index.php?act=updatetk">Welcome,<?= $name ?></a>
-            </div>           
-            <a style="color:white;" href="index.php?act=thoat"><i class="fas fa-sign-out-alt"></i>Logout</a>           
           </div>
+          <div class="user-name">
+            <a href="index.php?act=updatetk">Welcome,<?= $name ?></a>
+          </div>
+          <a style="color:white;" href="index.php?act=thoat"><i class="fas fa-sign-out-alt"></i>Logout</a>
+        </div>
       <?php
       } else {
       ?>
