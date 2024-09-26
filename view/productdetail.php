@@ -539,7 +539,7 @@ if (isset($_SESSION['user'])) {
                 $hinh = "uploads/" . $hinhtuongtu;
               ?>
                 <img class="thumbnail" src="<?= $hinh ?>" alt="Color 1" onmouseover="changeImage('<?= $hinh ?>')">
-                <!-- <img class="thumbnail" src="no.jpg" alt="Color 2" onmouseover="changeImage('no.jpg')"> -->
+            
               <?php
               }
               ?>
@@ -548,7 +548,7 @@ if (isset($_SESSION['user'])) {
           </div>
           <!-- kết thúc -->
         </div>
-        <!-- kết thúc product-image -->
+        <!-- end product-image -->
 
         <div class="product-details">
           <h2 class="product-name"><?= $name ?></h2>
