@@ -1,13 +1,12 @@
 
 <?php
-// Email của admin (địa chỉ nhận tin nhắn)
+// Email của admin 
 $admin_email = "thaianhvan2349@gmail.com";
 
-// Lấy dữ liệu từ form
 $sender_email = $_POST['sender_email'];
 $message = $_POST['message'];
 
-// Tiến hành gửi email
+// send email
 $subject = "Tin nhắn từ $sender_email";
 $headers = "From: $sender_email";
 mail($admin_email, $subject, $message, $headers);
