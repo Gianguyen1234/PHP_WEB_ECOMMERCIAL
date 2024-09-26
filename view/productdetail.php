@@ -448,13 +448,11 @@
     cursor: not-allowed;
   }
 
-  /* thong tin san pham */
   .content-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
-    /* height: 100vh; */
     width: 60%;
     margin-left: 400px;
 
