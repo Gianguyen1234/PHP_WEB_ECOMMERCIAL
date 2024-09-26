@@ -1,4 +1,3 @@
-
 <div class="contact-container">
     <h2>Send Your Feedback</h2>
     <form action="index.php?act=hoidap" method="post">
@@ -12,7 +11,6 @@
         <button type="submit" name="submit">Send</button>
     </form>
 </div>
-
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
