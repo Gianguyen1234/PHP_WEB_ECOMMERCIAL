@@ -680,7 +680,7 @@ if (isset($_SESSION['user'])) {
     const mainImage = document.getElementById('product-image');
     mainImage.src = originalImageSrc;
   }
-  
+
   const slider = document.querySelector('.color-slider');
   const prevBtn = document.getElementById('prev-btn');
   const nextBtn = document.getElementById('next-btn');
@@ -721,9 +721,9 @@ if (isset($_SESSION['user'])) {
       nextBtn.disabled = false;
     }
   }
-
   checkButtons();
 
+  
   function toggleContent() {
     const moreContent = document.getElementById('more-content');
     const toggleBtn = document.getElementById('content-toggle-btn');
