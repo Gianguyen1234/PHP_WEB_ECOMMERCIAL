@@ -158,7 +158,6 @@
         font-weight: bold;
     }
 
-    /* phương thức thanh toán */
     .payment-method {
         margin-top: 20px;
         display: flex;
