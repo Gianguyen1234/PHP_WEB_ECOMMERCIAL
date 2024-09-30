@@ -383,11 +383,9 @@
                 subtotal += parseFloat(price.innerText.replace('$', ''));
             });
             grandtotal = subtotal + <?= $phiship ?>;
-            // Save subtotal and grand total to localStorage
             sessionStorage.setItem('subtotal', subtotal.toFixed(2));
             sessionStorage.setItem('grandtotal', grandtotal.toFixed(2));
 
-            // Update display of subtotal and grand total
             document.getElementById('subtotal').innerText = '$' + subtotal.toFixed(2);
             document.getElementById('grandtotal').innerText = '$' + grandtotal.toFixed(2);
             document.getElementById('xoagiohang').addEventListener('click', function() {
