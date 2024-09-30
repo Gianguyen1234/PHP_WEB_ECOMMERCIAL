@@ -314,7 +314,6 @@
             }
             $grandtotal += $subtotal;
         } else {
-            // If the cart is empty, display a message
             echo "<p>Your cart is empty</p>";
         }
         ?>
