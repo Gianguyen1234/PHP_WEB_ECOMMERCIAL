@@ -62,13 +62,11 @@
     }
 
     .header-row span:nth-child(5) {
-        flex: 2.5;
-        
+        flex: 2.5;       
     }
 
     .header-row span:last-child {
-        flex: 2;
-       
+        flex: 2;       
     }
 
     .cart-product {
