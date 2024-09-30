@@ -50,18 +50,15 @@
     }
 
     .header-row span:nth-child(2) {
-        flex: 2.5;
-        
+        flex: 2.5;        
     }
 
     .header-row span:nth-child(3) {
-        flex: 1.5;
-       
+        flex: 1.5;       
     }
 
     .header-row span:nth-child(4) {
-        flex: 2;
-     
+        flex: 2;     
     }
 
     .header-row span:nth-child(5) {
@@ -73,7 +70,6 @@
         flex: 2;
        
     }
-
 
     .cart-product {
         display: flex;
