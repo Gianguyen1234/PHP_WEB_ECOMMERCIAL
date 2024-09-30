@@ -359,8 +359,6 @@
     //update total price when quantity changes;
     document.addEventListener('DOMContentLoaded', function() {
         var quantities = document.querySelectorAll('.quantity');
-
-
         quantities.forEach(function(quantity, index) {
             quantity.addEventListener('input', function() {
                 var price = parseFloat(document.getElementById('price' + index).innerText.replace('$', ''));
@@ -373,7 +371,6 @@
 
             });
         });
-
 
         function updateSubtotalAndGrandTotal() {
             var subtotal = 0;
@@ -391,7 +388,6 @@
             document.getElementById('xoagiohang').addEventListener('click', function() {
                 sessionStorage.clear();
             });
-
         }
       
     });
