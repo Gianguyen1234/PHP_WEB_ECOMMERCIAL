@@ -278,9 +278,7 @@
         $phiship = 15;
         $i = 0;
         $grandtotal = $phiship;
-        // Check if the cart exists in the session
         if (isset($_SESSION['mycart']) && !empty($_SESSION['mycart'])) {
-            // Loop through each product in the cart
             foreach ($_SESSION['mycart'] as $product) {
                 $id = $product[0];
                 $hinh = $product[1];
