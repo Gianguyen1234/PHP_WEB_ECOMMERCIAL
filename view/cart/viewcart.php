@@ -61,7 +61,7 @@
 
     .header-row span:nth-child(4) {
         flex: 2;
-        /* Adjust width of remove button */
+     
     }
 
     .header-row span:nth-child(5) {
