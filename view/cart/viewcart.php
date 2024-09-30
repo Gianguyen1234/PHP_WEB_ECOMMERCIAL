@@ -51,12 +51,12 @@
 
     .header-row span:nth-child(2) {
         flex: 2.5;
-        /* Adjust width of product name */
+        
     }
 
     .header-row span:nth-child(3) {
         flex: 1.5;
-        /* Adjust width of price*/
+       
     }
 
     .header-row span:nth-child(4) {
@@ -66,12 +66,12 @@
 
     .header-row span:nth-child(5) {
         flex: 2.5;
-        /* Adjust width of remove button */
+        
     }
 
     .header-row span:last-child {
         flex: 2;
-        /* Adjust width of total */
+       
     }
 
 
