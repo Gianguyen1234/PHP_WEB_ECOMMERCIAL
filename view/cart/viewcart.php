@@ -357,7 +357,6 @@
 
 <script>
     //update total price when quantity changes;
-
     document.addEventListener('DOMContentLoaded', function() {
         var quantities = document.querySelectorAll('.quantity');
 
@@ -392,29 +391,10 @@
             document.getElementById('subtotal').innerText = '$' + subtotal.toFixed(2);
             document.getElementById('grandtotal').innerText = '$' + grandtotal.toFixed(2);
             document.getElementById('xoagiohang').addEventListener('click', function() {
-                // Xóa tất cả dữ liệu trong localStorage
                 sessionStorage.clear();
             });
 
         }
-        // Load values from localStorage when the page loads
-        // window.onload = function() {
-        // for (var i = 0; i < quantities.length; i++) {
-        // var savedQuantity = localStorage.getItem('quantity' + i);
-        // var savedTotalPrice = localStorage.getItem('totalPrice' + i);
-        // if (savedQuantity !== null && savedTotalPrice !== null) {
-        // document.getElementById('total' + i).innerText = '$' + parseFloat(savedTotalPrice).toFixed(2)
-        // quantities[i].value = savedQuantity;
-        // }
-        // }
-        // var savedSubtotal = localStorage.getItem('subtotal');
-        // var savedGrandtotal = localStorage.getItem('grandtotal');
-        // if (savedSubtotal !== null && savedGrandtotal !== null) {
-        // document.getElementById('subtotal').innerText = '$' + parseFloat(savedSubtotal).toFixed(2);
-        // document.getElementById('grandtotal').innerText = '$' + parseFloat(savedGrandtotal).toFixed(2);
-        // }
-        // };
-
-
+      
     });
 </script>
