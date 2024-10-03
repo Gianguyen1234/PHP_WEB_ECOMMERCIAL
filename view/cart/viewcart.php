@@ -94,9 +94,7 @@
     </div>
 
 </div>
-
 <script>
-    //update total price when quantity changes;
     document.addEventListener('DOMContentLoaded', function() {
         var quantities = document.querySelectorAll('.quantity');
         quantities.forEach(function(quantity, index) {
@@ -128,7 +126,6 @@
             document.getElementById('xoagiohang').addEventListener('click', function() {
                 sessionStorage.clear();
             });
-        }
-      
+        }      
     });
 </script>
