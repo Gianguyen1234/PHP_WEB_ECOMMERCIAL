@@ -7,7 +7,6 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-/* Form title*/
 .frmtitle h1 {
     color: #333;
     text-align: center;
@@ -31,7 +30,6 @@
     background-color: #edf2f7;
     font-weight: 600;
 }
-/* Button container  */
 .rowkhac.mb10 {
     margin-bottom: 10px;
 }
@@ -61,7 +59,6 @@
         transform: scale(1);
     }
 }
-/* Link button  */
 .rowkhac.mb10 a input[type="button"] {
     background-color: #4caf50;
 }
@@ -88,11 +85,9 @@ input[type="text"]:focus {
     max-width: 50px;
     height: auto;
 }
-/*  cho tổng cộng */
 tfoot td {
     font-weight: bold;
 }
-/* phương thức thanh toán */
 .payment-method {
     margin-top: 20px;
     display: flex;
