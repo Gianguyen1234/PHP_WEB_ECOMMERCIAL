@@ -8,7 +8,6 @@
         justify-content: center;
         text-decoration: underline;
     }
-
     .cart-container {
         margin-top: 30px;
         display: flex;
@@ -16,7 +15,6 @@
         margin-right: 20px;
         margin-left: 20px;
     }
-
     .left-box {
         width: 48%;
         margin-left: 70px;
