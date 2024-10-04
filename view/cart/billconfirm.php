@@ -128,7 +128,6 @@
         justify-content: space-between;
         margin-bottom: 10px;
     }
-
     .linkdonhang a input {
         float: right;
         text-decoration: none;
@@ -140,14 +139,12 @@
         font-size: 14px;
         transition: border-color 0.3s, background-color 0.3s;
     }
-
     .linkdonhang a input:focus {
         outline: none;     
         border-color: #007bff;      
         background-color: #fff;       
         animation: blink 1s infinite;
     }
-
     @keyframes blink {
         0% {
             opacity: 1;
@@ -161,7 +158,6 @@
             opacity: 1;
         }
     }
-
     .right-box .summary .subtotal,
     .right-box .summary .shipping,
     .right-box .summary .grand-total {
