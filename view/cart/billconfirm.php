@@ -51,24 +51,19 @@
 
     .header-row span:nth-child(2) {
         flex: 2;
-        /* Adjust width of product name */
     }
 
     .header-row span:nth-child(3) {
-        flex: 3;
-      
+        flex: 3;     
     }
 
     .header-row span:nth-child(4) {
-        flex: 5;
-       
+        flex: 5;      
     }
 
     .header-row span:last-child {
-        flex: 2.5;
-      
+        flex: 2.5;     
     }
-
     .cart-product {
         display: flex;
         justify-content: space-between;
@@ -113,8 +108,6 @@
         flex-wrap: wrap;
         gap: 20px;
     }
-
-
     .right-box {
         width: 100%;
         height: fit-content;
