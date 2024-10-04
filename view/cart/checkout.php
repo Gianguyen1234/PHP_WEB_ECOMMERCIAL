@@ -36,7 +36,6 @@ $checkout_session = \Stripe\Checkout\Session::create([
 // gan gia tri thong tin bill va thong tin nguoi dat hang
 $_SESSION['billct'] = $billct;
 $_SESSION['customer_info'] = $bill;
-// Chuyển hướng người dùng đến trang thanh toán của Stripe
 http_response_code(303);
 header("Location: " . $checkout_session->url);
 ?>
