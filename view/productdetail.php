@@ -547,7 +547,6 @@ if (isset($_SESSION['user'])) {
           <!-- kết thúc -->
         </div>
         <!-- end product-image -->
-
         <div class="product-details">
           <h2 class="product-name"><?= $name ?></h2>
           <p class="product-price">$<?= $price ?></p>

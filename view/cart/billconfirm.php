@@ -56,17 +56,17 @@
 
     .header-row span:nth-child(3) {
         flex: 3;
-        /* Adjust width of price*/
+      
     }
 
     .header-row span:nth-child(4) {
         flex: 5;
-        /* Adjust width of remove button */
+       
     }
 
     .header-row span:last-child {
         flex: 2.5;
-        /* Adjust width of total */
+      
     }
 
     .cart-product {
