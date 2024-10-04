@@ -31,7 +31,7 @@ $checkout_session = \Stripe\Checkout\Session::create([
     "cancel_url" => "http://localhost/client(webbanhang)/view/cart/cancelbill.php",
     "locale" => "auto",
     "allow_promotion_codes" => true,
-    "line_items" => $line_items // Sử dụng mảng line_items đã được tạo từ cơ sở dữ liệu
+    "line_items" => $line_items 
 ]);
 // gan gia tri thong tin bill va thong tin nguoi dat hang
 $_SESSION['billct'] = $billct;
