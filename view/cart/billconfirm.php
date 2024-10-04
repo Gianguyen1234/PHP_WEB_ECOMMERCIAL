@@ -25,13 +25,11 @@
         padding: 20px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
-
     .box-header {
         border-bottom: 1px solid #ccc;
         padding-bottom: 10px;
         margin-bottom: 20px;
     }
-
     .box-header h2 {
         margin-bottom: 10px;
     }
