@@ -35,7 +35,6 @@
     .box-header h2 {
         margin-bottom: 10px;
     }
-
     .header-row {
         display: flex;
         justify-content: space-between;
@@ -43,12 +42,10 @@
         text-align: center;
         align-items: center;
     }
-
     .header-row span {
         flex: 1;
         text-align: center;
     }
-
     .header-row span:nth-child(2) {
         flex: 2;
     }
