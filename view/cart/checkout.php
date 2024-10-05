@@ -22,8 +22,6 @@ foreach ($billct as $product) {
     ];
 }
 
-
-// Tạo session thanh toán
 $checkout_session = \Stripe\Checkout\Session::create([
     "mode" => "payment",
     "success_url" => "http://localhost/client(webbanhang)/view/cart/success.php",
