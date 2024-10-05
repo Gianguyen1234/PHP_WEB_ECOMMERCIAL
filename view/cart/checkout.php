@@ -15,7 +15,7 @@ foreach ($billct as $product) {
         "quantity" => $product['quantity'],
         "price_data" => [
             "currency" => "usd",
-            "unit_amount" => $total_price_cents, // Số tiền của sản phẩm (đơn vị là dollars)
+            "unit_amount" => $total_price_cents, 
             "product_data" => [
                 "name" => $product['name']
             ]
