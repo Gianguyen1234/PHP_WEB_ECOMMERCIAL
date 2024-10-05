@@ -9,7 +9,6 @@ $stripe_secret_key = "YOUR_STRIPE_SECRET_API_KEY";
 // Tạo mảng line_items từ thông tin sản phẩm
 $line_items = [];
 foreach ($billct as $product) {
-    //convert price to cents 49.99 * 100 = 4999 cents
     $total_price_cents = (($product['totalprice'] * 100)/2);
     $line_items[] = [
         "quantity" => $product['quantity'],
