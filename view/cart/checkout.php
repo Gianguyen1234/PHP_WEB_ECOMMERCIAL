@@ -6,7 +6,6 @@ $stripe_secret_key = "YOUR_STRIPE_SECRET_API_KEY";
 
 \Stripe\Stripe::setApiKey($stripe_secret_key);
 
-// Tạo mảng line_items từ thông tin sản phẩm
 $line_items = [];
 foreach ($billct as $product) {
     $total_price_cents = (($product['totalprice'] * 100)/2);
